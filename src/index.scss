@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,500,600,700&display=swap');
+@import './css/globals';
+body {
+  margin: 0;
+  font-family:$font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:$white;
+  font-size: $font-size;
+  scroll-behavior: smooth;
+}
+img{
+  width:100%;
+}
+.d-flex
+{
+  display: flex;
+  justify-content: left;
+  align-items: space-between;
+}
+.d-flex-center
+{
+  justify-content: unset;
+  align-items: unset !important;
+}
+.biiinge-button
+{
+ padding: 15px 40px 15px 40px !important;
+/* Light Green */
+border: none;
+background:$accent-color;
+color: $white;
+font-weight: 500;
+font-family:$font-stack;
+font-size: $font-size;
+letter-spacing: 0.02em;
+&__accent{
+  background: $primary-color;
+color: $accent-color;
+}
+}
+/* ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' */

@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,500,600,700|Kulim+Park&display=swap');
+
 $primary-color: #111111 !global;
 $accent-color:#409DE0 !global;
-$secondary-color: #F2F2F2 !global;
+$white: #F2F2F2 !global;
 $yellow-color: #F2C94C !global;
-$font-stack: Archivo, sans-serif !global;
+$green-color: #6FCF97 !global;
+$font-stack: 'Archivo', sans-serif !global;
+$font-size-sm: 10px !global;
+$font-size: 14px !global;
+$font-size-md: 16px !global;
+$font-size-lg: 20px !global;
+$font-size-xlg: 50px !global;
 @mixin blue-linear-gradient {
     background: linear-gradient(180deg, rgba(0, 27, 98, 0) 0%, #001B62 100%);
 }
@@ -13,4 +21,93 @@ $font-stack: Archivo, sans-serif !global;
 
 @mixin black-radial-gradient {
 background: radial-gradient(50% 50% at 50% 50%, rgba(51, 51, 51, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+small{
+    
+font-size: $font-size-sm !important;
+/* or 100% */
+letter-spacing: 0.01em;
+padding: 0;
+margin: 0;
+}
+.color-green{
+color:$green-color;
+}
+// body{
+//     color:$white;
+//     font-family:$font-stack !important;
+// }
+h1{
+//     position: absolute;
+// width: 564px;
+// height: 100px;
+// left: 191px;
+// top: 357px;
+
+font-family: $font-stack !important;
+font-weight: 700;
+font-size: $font-size-xlg !important;
+line-height: 50px;
+/* or 100% */
+letter-spacing: 0.01em;
+padding: 0;
+margin: 0;
+/* Gray 6 */
+color: #F2F2F2;
+}
+h2{
+    
+font-family: $font-stack !important;
+font-weight: 500 !important;
+font-size: $font-size-xlg !important;
+line-height: 50px;
+/* or 100% */
+letter-spacing: 0.01em;
+
+padding: 0;
+margin: 0;
+/* Gray 6 */
+color: #F2F2F2;
+}
+h5{
+        
+font-family: $font-stack !important;
+font-weight: 400 !important;
+font-size: $font-size-lg !important;
+line-height: 30px;
+/* or 100% */
+letter-spacing: 0.02em;
+
+padding: 0;
+margin: 5px 0;
+/* Gray 6 */
+color: #F2F2F2;
+}
+h4{
+        
+    font-family: $font-stack !important;
+    font-weight: 500 !important;
+    font-size: $font-size-md !important;
+    line-height: 20px;
+    /* or 100% */
+    letter-spacing: 0.01em;
+    
+    padding: 0;
+    margin: 0;
+    /* Gray 6 */
+    color: #F2F2F2;
+    }
+h6{
+        
+font-family: $font-stack !important;
+font-weight: 400 !important;
+font-size: $font-size !important;
+line-height: 50px;
+/* or 100% */
+letter-spacing: 0.01em;
+
+padding: 0;
+margin: 0;
+/* Gray 6 */
+color: #F2F2F2;
 }

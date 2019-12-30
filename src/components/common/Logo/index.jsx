@@ -1,11 +1,13 @@
+import React from 'react';
 import logo from '../../../assets/icons/Logo.png'
 export const Logo =()=>{
     const style= [{
-       objectFit:"cover",
+       objectFit:"contain",
        width:"100%"
     },{
-        height:"30px",
-        width:"30px"
+        height:"auto",
+        width:"30px",
+        margin:"10px auto"
      }];
     return <div  style={style[1]} id="biinge-logo__container">
         <img src={logo} style={style[0]}/>

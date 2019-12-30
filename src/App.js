@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { SideNav } from './components/Navigation/SideNav';
 import {withContainer} from './components/common/Containers';
+import { Explore } from './pages/Explore';
+import { PopupBar } from './components/common/PopUpBars';
+import { SideNav } from './components/Navigation/SideNav';
 function App() {
   const SideBar = withContainer(
-    SideNav
+    SideNav,"xs","biiinge-sidenav__container"
   );
+  // const ExplorePage = withContainer(
+  //   Explore
+  // );
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -25,7 +29,9 @@ function App() {
     //   </header>
     // </div>
     <React.Fragment>
-      {SideBar}
+      <SideBar></SideBar>
+      <Explore></Explore>
+      <PopupBar></PopupBar>
     </React.Fragment>
   );
 }
