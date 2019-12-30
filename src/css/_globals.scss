@@ -1,0 +1,16 @@
+$primary-color: #111111 !global;
+$accent-color:#409DE0 !global;
+$secondary-color: #F2F2F2 !global;
+$yellow-color: #F2C94C !global;
+$font-stack: Archivo, sans-serif !global;
+@mixin blue-linear-gradient {
+    background: linear-gradient(180deg, rgba(0, 27, 98, 0) 0%, #001B62 100%);
+}
+
+@mixin black-linear-gradient {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0) -37.05%, #121212 100%);
+}
+
+@mixin black-radial-gradient {
+background: radial-gradient(50% 50% at 50% 50%, rgba(51, 51, 51, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
