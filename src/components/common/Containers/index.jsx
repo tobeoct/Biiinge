@@ -1,20 +1,27 @@
 import { Screen } from "./screen"
-import React from 'react';
+import React, { useState } from 'react';
 
-export const withContainer =(WrappedComponent,type,className, isSection=false)=>{
- 
+export const withContainer =(WrappedComponent,payload)=>{
+ let {type,id,className, isSection,height,padding} = payload;
 return class extends React.Component {
     constructor(props) {
       super(props);
     
+// console.log(type);
+// console.log(id);
+// console.log(className);
+// console.log(isSection);
+// console.log(height);
     }
 
-
     render() {
-      const { extraProp, ...passThroughProps } = this.props;
-      const injectedProp = [];//this.state.data;
-      return <Screen type={type} className={className} isSection={isSection}><WrappedComponent injectedProp={injectedProp}
-       {...passThroughProps}></WrappedComponent></Screen>;
+       const { extraProp, ...passThroughProps } = this.props;
+      
+      const injectedProp = this.props;
+      return <Screen type={type} className={className} id={id} isSection={isSection} height={height} padding={padding}>
+        <WrappedComponent injectedProp={injectedProp}
+       {...passThroughProps}></WrappedComponent>
+       </Screen>;
     }
 }
 }

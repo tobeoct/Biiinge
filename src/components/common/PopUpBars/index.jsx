@@ -4,6 +4,7 @@ import vrHeadSet from '../../../assets/images/vr-headset.png';
 import './popup-bar.scss';
 export const PopupBar =()=>{
     return <div id="biiinge-popupbar" >
+        
         <img src={background}/>
         <div style={{position:"absolute", textAlign:"center",top:"15%"}}>
             <div style={{width:"113.3px", margin:"auto"}}>

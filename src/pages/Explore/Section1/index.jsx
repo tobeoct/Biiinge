@@ -4,7 +4,9 @@ import { SectionDetails } from './section';
 export const Section1=()=>{
     
       const Section = withContainer(
-        SectionDetails,"","explore-section1__container", true
+     SectionDetails,  {type:"",id:"explore-section1__container",className:"",isSection: true, height:undefined}
       );
     return <Section></Section>
+
+
 }

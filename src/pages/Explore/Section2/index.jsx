@@ -1,13 +1,16 @@
-import React  from 'react';
-import {withSettings} from '../../../components/common/Images';
+import React, { useState }  from 'react';
 import {withContainer} from '../../../components/common/Containers';
-import eyeCatcher from '../../../assets/images/eye-catcher-are.svg';
+import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
+import { SectionDetails } from './section';
 export const Section2=()=>{
-  const Image = withSettings(
-    "no-height","explore-section2__teaser",eyeCatcher
-  );
-    const Section = withContainer(
-        Image,"","explore-section2__container", true
-      );
+      let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
+      let obj = withContainerPayload;
+      obj.type="";
+      obj.id="explore-section2__container";
+      obj.className="";
+      obj.isSection= true;
+      obj.height=undefined;
+      const Section = withContainer(SectionDetails,obj);
+     
     return <Section></Section>
 }

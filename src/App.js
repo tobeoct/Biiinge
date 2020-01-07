@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import {withContainer} from './components/common/Containers';
 import { Explore } from './pages/Explore';
 import { PopupBar } from './components/common/PopUpBars';
 import { SideNav } from './components/Navigation/SideNav';
-function App() {
+import { ThemeProvider } from './contexts/theme-context';
+import {WITHCONTAINERPAYLOAD} from './variables/payloads';
+import { Video } from './pages/Title';
+ const App=() =>{
+  var [initialState,setInitialState]=useState({display:false});
+  let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
+  let obj = withContainerPayload;
+  obj.type="xs";
+  obj.id="biiinge-sidenav__container";
+  obj.className="";
+  obj.isSection= false;
+  obj.height=undefined;
   const SideBar = withContainer(
-    SideNav,"xs","biiinge-sidenav__container"
+    SideNav,obj
   );
+  const handleSetDisplay=()=>{
+    console.log("Setting Display");
+    setInitialState({display:!initialState.display});
+     }
   // const ExplorePage = withContainer(
   //   Explore
   // );
@@ -28,11 +44,17 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <React.Fragment>
+    
+    <Router>
+      <ThemeProvider value={{show:initialState.display, setDisplay:handleSetDisplay}}>
       <SideBar></SideBar>
-      <Explore></Explore>
+      <Switch>
+      <Route exact path='/' component={Explore} />
+      <Route exact path='/title' component={Video} />
+      </Switch>
       <PopupBar></PopupBar>
-    </React.Fragment>
+      </ThemeProvider>
+    </Router>
   );
 }
 

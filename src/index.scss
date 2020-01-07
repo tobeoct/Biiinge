@@ -8,9 +8,32 @@ body {
   color:$white;
   font-size: $font-size;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 img{
   width:100%;
+}
+.d-inline-block {
+  width:100%;
+  .item{
+  display: inline-block;
+  vertical-align: bottom;
+ margin-right:5px ;
+}
+
+ .item:not(:first-child):not(:last-child)
+{
+  margin: auto 10px !important;
+}
+ .item:last-child{
+  text-align: right;
+}
+}
+.d-inline-block-no-margin
+{
+  .item{
+    margin:0px !important ;
+  }
 }
 .d-flex
 {
@@ -18,10 +41,20 @@ img{
   justify-content: left;
   align-items: space-between;
 }
+.d-flex-spaced
+{
+  display: flex;
+  justify-content: space-between;
+}
 .d-flex-center
 {
-  justify-content: unset;
+  justify-content: center;
   align-items: unset !important;
+}
+.d-flex-right
+{
+  justify-content: flex-end;
+  align-items: center ;
 }
 .biiinge-button
 {
@@ -34,10 +67,40 @@ font-weight: 500;
 font-family:$font-stack;
 font-size: $font-size;
 letter-spacing: 0.02em;
+transition: 0.4s ease-in-out;
+cursor: pointer;
 &__accent{
   background: $primary-color;
 color: $accent-color;
 }
+&__rounded{
+  padding: 7.5px 20px 7.5px 20px !important;
+  background: $dark-blend-color;
+  color: $light-grey-color;
+  border-radius: 20px;
+  margin: auto 10px;
+}
+}
+.biiinge-button:hover{
+  transform: scale(1.07);
+  margin-left: 5px;
+}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+   display: none;
+  }
+  .biiinge-card {
+    display: inline-block;
+  }
+}
+.strip{
+  padding: 0 !important;
+  margin: 0 !important;
 }
 /* ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' */

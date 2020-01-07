@@ -7,4 +7,28 @@
     z-index:5; 
     display:flex;
     justify-content:center;
+    animation: bounceLoop 1s infinite ease-in-out;
+}
+
+@keyframes bounceLoop
+{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        
+        transform: scale(1.02);
+    }
+    50%{
+    
+        transform: scale(1.03);
+    }
+75%{
+        
+        transform: scale(1.02);
+    }
+    100%{
+        
+        transform: scale(1);
+    }
 }
