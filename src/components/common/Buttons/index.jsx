@@ -14,5 +14,5 @@ export const Button=({type,text,cName})=>{
     {
         className+=" biiinge-button__rounded";
     }
-    return <button className={className} style={{marginRight:"30px"}}><Link className={linkClassName} to={'/title'} >{text}</Link></button>
+    return <Link className={linkClassName} to={'/title'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
 }

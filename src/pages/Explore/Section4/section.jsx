@@ -41,7 +41,7 @@ export const SectionDetails=({type=""})=>{
   obj.isSection= false;
   obj.height=undefined;
   const Image = withSettings(
-    "no-height","explore-section4__teaser",eyeCatcher
+    "no-height","explore-section4__teaser",eyeCatcher,undefined,"none"
   );
   const CardsSection = withContainer(
     Cards,obj
@@ -50,8 +50,7 @@ export const SectionDetails=({type=""})=>{
       {/* <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" isVisible={true}>
   
     </ScrollAnimation> */}
-    
-    <Image></Image>
+     <Image></Image>
     <Header text={"Just Aired Episodes"}></Header>
   
     {/* <div className="biiinge-sheared-card"><img src={strangerThings} className="biiinge-sheared-card__image-left"/></div>

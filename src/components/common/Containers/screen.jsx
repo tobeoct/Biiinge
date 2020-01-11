@@ -44,7 +44,7 @@ export const Screen=({children,type, id,className,isSection,height,padding})=>
             }
             if( type==="height"){
                 setStyle({
-                    width:"100%",
+                    width:isSection?"100vw":"100%",
                     height:myHeight,
                     position:"relative",
                     paddingBottom:padding

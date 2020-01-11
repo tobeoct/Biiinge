@@ -8,6 +8,9 @@ export const Overlay=({type})=>{
            setMyBG("radial-gradient(50% 50% at 50% 50%, rgba(51, 51, 51, 0) 0%, rgba(0, 0, 0, 1) 100%)");
            setMyOpacity(0.7);
         }
+        else if(type==="none"){
+            setMyBG("transparent");
+        }
         else{
             setMyBG("linear-gradient(180deg, rgba(34, 34, 34, 0) -37.05%, #0d0d0d 100%)");
         }

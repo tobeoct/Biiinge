@@ -31,7 +31,7 @@ export const SectionDetails=({type=""})=>{
   obj.isSection= false;
   obj.height=undefined;
   const Image = withSettings(
-    "no-height","explore-section6__teaser",eyeCatcher
+    "no-height","explore-section6__teaser",eyeCatcher,undefined,"none"
   );
   const CardsSection = withContainer(
     Cards,obj

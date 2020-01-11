@@ -43,7 +43,7 @@
     &__description
     {
         position: absolute;
-        top:40%;
+        top:30%;
         left:15%;
         z-index: 2;
         overflow: hidden;
@@ -203,7 +203,10 @@ border-radius: 2px;
     padding: 1% 7%;
     background: $dark-tint;
 }
-
+.explore-filter__active{
+    background: $accent-color;
+    color: $primary-color;
+}
 
 #explore-section4__justaired__container{
     display:flex;justify-content:space-between; align-items:center;

@@ -4,7 +4,7 @@ import { SectionDetails } from './section';
 export const Section1=()=>{
     
       const Section = withContainer(
-     SectionDetails,  {type:"",id:"explore-section1__container",className:"",isSection: true, height:undefined}
+     SectionDetails,  {type:"height",id:"explore-section1__container",className:"",isSection: true, height:"90vh"}
       );
     return <Section></Section>
 

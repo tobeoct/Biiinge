@@ -12,10 +12,10 @@ export const Filters=({style})=>{
     },[style]) 
    
     return <div className="explore-filter__container scrolling-wrapper" style={myStyle}>
-        <Button type={"rounded"} text={"Action"}></Button>
+        <Button type={"rounded"} text={"Action"} cName={"explore-filter__active"}></Button>
         <Button type={"rounded"} text={"Adventure"}></Button>
         <Button type={"rounded"} text={"Romance"}></Button>
-        <Button type={"rounded"} text={"Crime"}></Button>
+        <Button type={"rounded"} text={"Crime"} cName={"explore-filter__active"}></Button>
         <Button type={"rounded"} text={"Drama"}></Button>
         <Button type={"rounded"} text={"Sci Fi"}></Button>
         <Button type={"rounded"} text={"Animation"}></Button>
