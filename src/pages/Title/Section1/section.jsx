@@ -23,19 +23,6 @@ export const SectionDetails=()=>{
         return <div style={{width:"100px",height:"150px", display:"inline-block"}}><img src={require(`../../../assets/images/${item.imageUrl}`)}/></div>
       })}
       
-      {/* <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div>
-      <div style={{width:"80px",height:"150px", display:"inline-block"}}><img src={picture}/></div> */}
     </div>
     </ScrollAnimation>
 </React.Fragment>
