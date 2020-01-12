@@ -8,7 +8,7 @@ export const Trailer=({className})=>{
   }else{
     name+= " explore-trailer__card";
   }
-    return   <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut" isVisible={true} offset={80}><div className={name}>
+    return   <ScrollAnimation animateIn="fadeIn"  isVisible={true} offset={80}><div className={name}>
     {/* <img src={trailer}/> */}
     <video controls>
   <source src={trailer} type="video/mp4"/>

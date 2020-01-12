@@ -11,10 +11,9 @@ export const SectionDetails=()=>{
         "","explore-section1__image ",picture,undefined,"radial"
       );
     return <React.Fragment >
-      <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" isVisible={true} offset={50}>
-  
+     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDelay="500" animationInDuration="2000" isVisible={true}>
    <Image></Image>
-    </ScrollAnimation>
+    </Animated>
     <ThumbnailDescription></ThumbnailDescription>
     <Pagination></Pagination>
 </React.Fragment>

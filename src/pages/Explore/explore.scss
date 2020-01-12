@@ -5,12 +5,15 @@
         border-bottom: 0.2px solid $dark-grey-color;
         min-height: 50px;
         padding: 25px 25px 25px 7%;
-        &__togglebar
-        {
-            width: 20px;
-            height: 4px;
-            background: $dark-grey-color;
-        }
+       height: 100px;
+       box-sizing: border-box;
+        // &__togglebar
+        // {
+        //     width: 20px;
+        //     height: 4px;
+        //     background: $dark-grey-color;
+        //     margin-top: 40%;
+        // }
     }
 }
 .explore-sections{
@@ -38,7 +41,6 @@
         padding-bottom:40px;
     }
     &__titlebar{
-       
         &__togglebar
         {
             position: absolute;
@@ -47,6 +49,7 @@
             background: $dark-grey-color;
             transition: ease-in 0.3s;
             cursor: pointer;
+            margin-top: 2%;
         }
     }
 }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,500,600,700&display=swap');
 @import './css/globals';
 body {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   font-family:$font-stack;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,7 +187,7 @@ left:30%;
   width: 75%;
   height: 100%;
   input{
-    height: 100%;
+    height: 40px;
     background: #F2F2F220;
     border: none;
     border-radius: 2px;
@@ -209,15 +210,16 @@ left:30%;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    height: 100%;
+    height: 40px;
     padding: 1.5% 10px 1.5% 10px;
     border-right: 1px solid #F2F2F210;
     background: $dark-blend-color;
     color: $light-grey-color;
   }
   &__button{
+    
 width: 35px;
-height: 100%;
+height: 40px;
 text-align: center;
     background: $dark-blend-color;
     border-top-right-radius:30px ;
