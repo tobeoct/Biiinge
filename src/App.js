@@ -9,6 +9,7 @@ import { ThemeProvider } from './contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from './variables/payloads';
 import { Video } from './pages/Title';
 import { SearchBar } from './components/common/SearchBar';
+import { Login } from './pages/Login';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -18,9 +19,7 @@ import { SearchBar } from './components/common/SearchBar';
   obj.className="";
   obj.isSection= false;
   obj.height=undefined;
-  const SideBar = withContainer(
-    SideNav,obj
-  );
+  
   const handleSetDisplay=()=>{
     console.log("Setting Display");
     setInitialState({display:!initialState.display});
@@ -48,10 +47,11 @@ import { SearchBar } from './components/common/SearchBar';
     
     <Router>
       <ThemeProvider value={{show:initialState.display, setDisplay:handleSetDisplay}}>
-      <SideBar></SideBar>
+       
       <SearchBar></SearchBar>
       <Switch>
-      <Route exact path='/' component={Explore} />
+      <Route exact path='/' component={Login} />
+      <Route exact path='/explore' component={Explore} />
       <Route exact path='/title' component={Video} />
       </Switch>
       <PopupBar></PopupBar>

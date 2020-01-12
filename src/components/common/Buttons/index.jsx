@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-export const Button=({type,text,cName})=>{
+import {  Link } from 'react-router-dom';
+export const Button=({type,text,cName,url})=>{
     let myClass = cName===undefined?"":cName;
     let className = "biiinge-button "+myClass;
     let linkClassName = "";
@@ -19,5 +19,5 @@ export const Button=({type,text,cName})=>{
         className+=" biiinge-button__small";
         linkClassName="color-black";
     }
-    return <Link className={linkClassName} to={'/title'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
+    return <Link className={linkClassName} to={url!==undefined?'/explore':'/title'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
 }

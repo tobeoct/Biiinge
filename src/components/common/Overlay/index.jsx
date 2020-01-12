@@ -11,6 +11,10 @@ export const Overlay=({type})=>{
         else if(type==="none"){
             setMyBG("transparent");
         }
+        else if(type==="login"){
+            setMyBG("radial-gradient(50% 50% at 50% 50%, rgba(17, 17, 17, 0.76) 0%, #111111 100%)");
+            setMyOpacity(0.95);
+        }
         else{
             setMyBG("linear-gradient(180deg, rgba(34, 34, 34, 0) -37.05%, #0d0d0d 100%)");
         }

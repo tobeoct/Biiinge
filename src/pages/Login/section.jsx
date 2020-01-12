@@ -1,30 +1,34 @@
 import React, { useEffect, useContext, useState } from 'react';
 import {Animated} from "react-animated-css";
 import ScrollAnimation from 'react-animate-on-scroll';
-import {withSettings} from '../../../components/common/Images';
-import eyeCatcher from '../../../assets/images/eye-catcher-biiinge.svg';
-import '../explore.scss';
-import ThemeContext from '../../../contexts/theme-context';
-import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
+import {withSettings} from '../../components/common/Images';
+import bg from '../../assets/images/login-bg.jpg';
+import popup from '../../assets/images/popup.png';
+import {Button} from '../../components/common/Buttons';
+import './login.scss';
 export const SectionDetails=()=>{
-  let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
-  
- let [myOpacity,setMyOpacity]=useState(1);
-  let {display}=useContext(ThemeContext);
 
-  useEffect(()=>{
-    if(display===true){
-      setMyOpacity(1);    }else{
-        setMyOpacity(0);
-      }
-  },[display])
 
   const Image = withSettings(
-    "no-height","login-section1__background",eyeCatcher
+    "no-height","login-section1__background",bg,undefined,"login"
   );
   
     return <React.Fragment >
+        <div style={{position:"relative"}}> 
     <Image></Image>
-
+    <div style={{position:"absolute",width:"40%",top:"10%",left:"28%", zIndex:5}}>
+    <img src={popup}/>'
+    <div  style={{position:"absolute",width:"80%",top:"15%",left:"10%", textAlign:"center"}}>
+        <h2>Welcome Back !</h2>
+        <div style={{textAlign:"left", marginTop:"30px"}}>
+<label>Username</label></div>
+<input type="text"/>
+<div style={{textAlign:"left"}}>
+<label>Password</label></div>
+<input type="text"/>
+<Button text={"Sign In"} url={"explore"}></Button>
+    </div>
+    </div>
+</div>
 </React.Fragment>
 }
