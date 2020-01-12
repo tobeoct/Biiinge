@@ -6,14 +6,14 @@ import { SVG } from '../../common/Images/svg';
 import { Button } from '../../common/Buttons';
 export const  ThumbnailDescription=()=>{
     return <div id="explore-section1__description">
-             <ScrollAnimation animateIn="fadeInDown" animateOut="fadeOutUp" isVisible={true}>
+             <ScrollAnimation animateIn="fadeInDown" animateOut="fadeOutUp" offset={100} isVisible={true}>
   
         <div className="explore-section1__ratings d-flex">
 <span><SVG vector={star}></SVG></span><span>8.5 </span><span style={{marginLeft:"10px",opacity:0.7}}>  ACTION  |  ADVENTURE</span>
         </div>
         </ScrollAnimation>
         <div style={{maxWidth:"600px"}}>
-        <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" isVisible={true}>
+        <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" offset={100} isVisible={true}>
   
         <h1>Star Wars </h1> 
 <h2>The Rise Of Skywalker </h2>

@@ -47,19 +47,7 @@ export const SectionDetails=({type=""})=>{
 <Trailer></Trailer>
 <CardsSection payload={data.payload} type={"card-3"}  opacity={myOpacity}   ></CardsSection>
 
-     {/* <div className="explore-section7__tvshows__container" >
-  <div className="explore-section7__tvshows__row scrolling-wrapper">
-      
-    <div className="explore-section7__tvshows__card" ><img src={impact} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={jeopardy} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-    <div className="explore-section7__tvshows__card" ><img src={eyeCatcher} style={{objectFit:"cover"}}/></div>
-  </div>
-  </div> */}
+    
 </React.Fragment>
 }
 

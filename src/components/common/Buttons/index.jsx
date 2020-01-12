@@ -14,5 +14,10 @@ export const Button=({type,text,cName})=>{
     {
         className+=" biiinge-button__rounded";
     }
+    if(type==='small')
+    {
+        className+=" biiinge-button__small";
+        linkClassName="color-black";
+    }
     return <Link className={linkClassName} to={'/title'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
 }

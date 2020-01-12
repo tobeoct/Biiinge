@@ -37,7 +37,9 @@ export const SectionDetails=({type=""})=>{
     Cards,obj
   );
     return <React.Fragment >
+       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
     <Image></Image>
+    </ScrollAnimation>
     <Header text={"TV Schedules For Wednesday, January 1st"}></Header>
      <CardsSection payload={data.payload} type={"card-6"}  opacity={myOpacity}   ></CardsSection>
 

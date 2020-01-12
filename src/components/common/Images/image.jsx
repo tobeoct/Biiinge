@@ -32,6 +32,18 @@ export const Image=({type,picture,height,overlayType})=>
                     objectFit:"cover"
                 });
             }
+
+            if( type==="rounded"){
+                setStyle({
+                    width:myHeight,
+                    height:myHeight,
+                    objectFit:"cover",
+                    borderRadius:myHeight,
+                    position:"relative",
+                    zIndex:"2",
+                    border:"2px solid #333333"
+                });
+            }
     
     },[type,height]);
     // if(type!=="no-height"){

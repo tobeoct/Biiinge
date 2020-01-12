@@ -4,16 +4,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {withSettings} from '../../../components/common/Images';
 import {withContainer} from '../../../components/common/Containers';
 import eyeCatcher from '../../../assets/images/eye-catcher-itching.svg';
-import euphoria from '../../../assets/images/euphoria.png';
-import strangerThings from '../../../assets/images/stranger-things.jpg';
-import power from '../../../assets/images/power.png';
 import '../explore.scss';
 import { Header } from '../common/Headers/header';
 import { Cards } from '../common/Card';
  import data from "../../../datasource/just-aired.json";
- import moviesWatchedData from "../../../datasource/movies.json";
 import ThemeContext from '../../../contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
+import { Pagination } from '../../../components/common/Pagination';
 export const SectionDetails=({type=""})=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   
@@ -47,18 +44,12 @@ export const SectionDetails=({type=""})=>{
     Cards,obj
   );
     return <React.Fragment >
-      {/* <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" isVisible={true}>
+ <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
   
-    </ScrollAnimation> */}
      <Image></Image>
+     </ScrollAnimation>
     <Header text={"Just Aired Episodes"}></Header>
-  
-    {/* <div className="biiinge-sheared-card"><img src={strangerThings} className="biiinge-sheared-card__image-left"/></div>
-    <div className="biiinge-sheared-card" ><img src={euphoria} className="biiinge-sheared-card-active"/></div>
-    <div className="biiinge-sheared-card"><img src={power} className="biiinge-sheared-card__image-right"/></div> */}
    <CardsSection payload={data.payload} type={""} cardType={"sheared"} opacity={myOpacity}></CardsSection>
-  
+  <Pagination></Pagination>
 </React.Fragment>
 }
-
-//,display:"none"

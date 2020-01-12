@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 export const Screen=({children,type, id,className,isSection,height,padding})=>
 {
+
     if(height===undefined)
     {
         height="100vh";
@@ -9,55 +10,45 @@ export const Screen=({children,type, id,className,isSection,height,padding})=>
     {
         padding = "auto";
     }
+    const [cName,setCName] = useState("explore-sections__container");
     const [style,setStyle] =useState({
         width:isSection?"100vw":"100%",
         minHeight:height,
-       
-        top:0,
-        bottom:0,
-        position:"relative",
-        paddingBottom:padding
     });
   const [myHeight,setMyHeight]=useState(height)
     useEffect(()=>{
         setMyHeight(height);
+        setCName(cName+" "+className);
         if(type==="xs"){
+            setCName(cName+" "+className+" explore-sections__xs");
         setStyle({
             width:"60px",
             minHeight:myHeight,
            
-            opacity:"0.8",
-            zIndex:5,
-            position:"fixed",
-            top:0,
-            bottom:0,
-            paddingBottom:padding
         });
         }
         if(type==="no-height" ){
+            setCName(cName+" "+className+" explore-sections__no-height");
             setStyle({
-                width:"100%",
-                height:"100%",
-                position:"relative",
+                
                 paddingBottom:padding
             });
             }
             if( type==="height"){
+                setCName(cName+" "+className+" explore-sections__height");
                 setStyle({
                     width:isSection?"100vw":"100%",
-                    height:myHeight,
-                    position:"relative",
-                    paddingBottom:padding
+                    height:myHeight
                 });
                 }
     
     },[type,height]);
     if(isSection){
-    return <section style={style} id={id} className={className}>
+    return <section style={style} id={id} className={cName}>
         {children}
     </section >
     }else{
-        return <div style={style} id={id} className={className}>
+        return <div style={style} id={id} className={cName}>
         {children}
     </div >
     }

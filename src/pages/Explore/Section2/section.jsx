@@ -35,11 +35,11 @@ export const SectionDetails=()=>{
     Cards,obj
   );
     return <React.Fragment >
-      {/* <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" isVisible={true}>
-  
-    </ScrollAnimation> */}
     
+     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
+  
     <Image></Image>
+</ScrollAnimation>
     <Header text={"Trending"}></Header>
 <Filters></Filters>
     <CardsSection payload={data.payload}></CardsSection>

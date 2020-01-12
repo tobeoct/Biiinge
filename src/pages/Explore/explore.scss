@@ -14,6 +14,29 @@
     }
 }
 .explore-sections{
+    &__container{
+        top:0;
+        bottom:0;
+        position:relative;
+        padding-bottom:30px;
+    }
+    &__no-height{
+        width:100%;
+                height:100%;
+                position:relative;
+    }
+    &__height{
+
+    }
+    &__xs{
+        width:60px;
+        opacity:"0.8";
+        z-index:5;
+        position:fixed;
+        top:0;
+        bottom:0;
+        padding-bottom:40px;
+    }
     &__titlebar{
        
         &__togglebar
@@ -67,7 +90,14 @@
 }
 
 #explore-section2{
-    
+    &__container{
+        padding-top:30px;
+        padding-bottom:30px;
+        .biiinge-card{
+            height: auto !important;
+            min-height: 320px !important;
+        }
+    }
     &__trending__container{
 
     margin: 20px auto;
@@ -80,7 +110,7 @@
         position: relative;
         &__date{
             opacity: 0.4;
-            margin-right: 50px;
+            // margin-right: 50px;
         }
     }
 }
@@ -89,7 +119,7 @@
 
  #explore-section3{
      &__friends__container{
-     padding: 25px 25px 0px 3.5%;
+     padding: 25px 25px 0px 5%;
  }
  &__friends__watched{
    transform: translateY(-20px);
@@ -99,16 +129,20 @@
     width: 366px;
      height: 200px;
  }
-.biiinge-card-rounded {
+.biiinge-card__rounded {
  height: 130px;
  margin-left:40px;
+ &__active img{
+     border:2px solid $accent-color !important;
+    //  filter: blur(2px);
+ }
     .image__active
 {
     position: absolute;
-    top:0;
-    width: 100px;
+    top:30px;
+    width: 120px;
     height: 200px;
-    background:radial-gradient(50% 50% at 50% 50%, rgba(5, 5, 5, 0) 0%, #0f0f0f 100%); 
+    background:radial-gradient(50% 50% at 50% 50%, rgba(5, 5, 5, 0) 0%, #0c0c0c 100%); 
     border-top-right-radius: 50px;
     border-top-left-radius: 50px; 
 }
@@ -202,13 +236,17 @@ border-radius: 2px;
     width: 100%;
     padding: 1% 7%;
     background: $dark-tint;
+    .biiinge-button__rounded{
+    font-weight: 400;}
 }
 .explore-filter__active{
     background: $accent-color;
     color: $primary-color;
+    font-weight: 700;
 }
 
 #explore-section4__justaired__container{
+    position: relative;
     display:flex;justify-content:space-between; align-items:center;
 }
 .biiinge-card{
@@ -220,7 +258,9 @@ border-radius: 2px;
             vertical-align: bottom;
             width: 15%;
             margin: 10px auto;
+            margin-bottom: 40px;
             height:auto;
+            cursor: pointer;
             
             //  background:blue
             img{
@@ -238,7 +278,7 @@ border-radius: 2px;
 .explore-section5
 {
     &__movies{
-        padding: 1% 4% 0.5% 6% ;
+        padding: 1% 4% 0.5% 7% ;
         &__row{
             width: 100%;
             height: auto;
@@ -287,7 +327,7 @@ border-radius: 2px;
 .explore-section7{
     &__tvshows{
         &__container{
-            padding: 1% 4% 1% 6% !important;
+            padding: 1% 4% 1% 7% !important;
             width: 100%;
             height: auto;
         }
@@ -317,12 +357,12 @@ border-radius: 2px;
 .explore-section8{
   
     &__kidstv{
-        padding: 1% 4% 0.5% 6% ;
+        padding: 1% 4% 0.5% 7% ;
         width: 100%;
             height: auto;
             background: $accent-color !important;
         &__container{
-            padding:  1% 4% 0.5% 6%  !important;
+            padding:  1% 4% 0.5% 7%  !important;
             width: 100%;
             height: auto;
             background: $accent-color !important;
@@ -344,3 +384,12 @@ border-radius: 2px;
 }
     }
 }
+
+
+@media all and (max-width:900px){
+    #explore-section1{
+        &__container{
+            height: auto !important;
+        }
+    }
+  }

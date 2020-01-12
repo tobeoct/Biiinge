@@ -8,6 +8,7 @@ import { SideNav } from './components/Navigation/SideNav';
 import { ThemeProvider } from './contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from './variables/payloads';
 import { Video } from './pages/Title';
+import { SearchBar } from './components/common/SearchBar';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -48,6 +49,7 @@ import { Video } from './pages/Title';
     <Router>
       <ThemeProvider value={{show:initialState.display, setDisplay:handleSetDisplay}}>
       <SideBar></SideBar>
+      <SearchBar></SearchBar>
       <Switch>
       <Route exact path='/' component={Explore} />
       <Route exact path='/title' component={Video} />

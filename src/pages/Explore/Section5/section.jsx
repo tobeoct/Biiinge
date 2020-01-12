@@ -45,7 +45,9 @@ export const SectionDetails=({type=""})=>{
     Cards,obj2
   );
     return <React.Fragment >
+       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
     <Image></Image>
+    </ScrollAnimation>
     <Header text={"Movies"}></Header>
     <Filters></Filters>
      <CardsSection2 payload={data.payload} type={"card"}  opacity={myOpacity}   ></CardsSection2>

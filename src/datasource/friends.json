@@ -1,43 +1,49 @@
 {
     "payload":[{
     "id":1,
-    "title":"Sonic The HedgeHog",
+    "name":"Spiderman",
     "imageUrl":"profile1.jpg",
+"isActive": false,
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
 },
 {
     "id":2,
-    "title":"I  Am Mother",
+    "name":"Joe Boy",
     "imageUrl":"profile5.jpg",
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences.",
-"watched":[{"id":1,"imageUrl":"star-wars.png"},{"id":2,"imageUrl":"joker.png"},{"id":3,"imageUrl":"baby-driver.png"}]
+"isActive": true,
+    "watched":[{"id":1,"title":"Star Wars","status":"Watching","duration":"2hr 30mins","imageUrl":"star-wars.png"},{"id":2,"title":"Joker","status":"Watched","duration":"1hr 30mins","imageUrl":"joker.png"},{"id":3,"title":"Baby Driver","status":"Watched","duration":"1hr 30mins","imageUrl":"baby-driver.png"}]
 },
 {
     "id":3,
-    "title":"Avengers: The End Game",
+    "name":"Iron Man",
     "imageUrl":"profile3.png",
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
+,"isActive": false
 
 },
 {
     "id":4,
-    "title":"Dark Phoenix",
+    "name":"Captain",
     "imageUrl":"profile4.png",
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
+,"isActive": false
 
 },
 {
     "id":5,
-    "title":"Us",
+    "name":"Naira Marley",
     "imageUrl":"profile2.jpg",
+    "isActive": false,
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
 
 }
 ,
 {
     "id":6,
-    "title":"House",
+    "name":"Psyche",
     "imageUrl":"profile6.jfif",
+    "isActive": false,
     "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
 
 }

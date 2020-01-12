@@ -9,7 +9,7 @@ export const Section2=()=>{
       obj.id="explore-section2__container";
       obj.className="";
       obj.isSection= true;
-      obj.height=undefined;
+      obj.height="auto";
       const Section = withContainer(SectionDetails,obj);
      
     return <Section></Section>

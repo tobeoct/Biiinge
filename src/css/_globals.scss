@@ -35,6 +35,7 @@ p{
     padding: 0;
     font-size: $font-size;
     color: $white;
+    letter-spacing: 0.05em;
 }
 small{
     
@@ -135,4 +136,27 @@ video,img{
 }
 section{
     background: $primary-color;
+}
+
+@media all and (max-width:900px){
+    body{
+        font-size: 14px !important;
+    }
+    h1{
+      font-size: 24px !important;
+      line-height: 30px  !important;
+    }
+    h2,h3{
+        font-size: 18px !important;
+        line-height: 18px  !important;
+      }
+      h5{
+        font-size: 14px !important;
+        line-height: 18px  !important;
+      }
+      .biiinge-button{
+          padding: 10px 15px 10px 15px !important;
+          font-size: 14px !important;
+          line-height: 15px;
+      }
 }
