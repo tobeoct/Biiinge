@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import {withContainer} from '../../components/common/Containers';
 import { SectionDetails } from './section';
 import {WITHCONTAINERPAYLOAD} from '../../variables/payloads';
+import { Spinner } from '../../components/common/Spinner';
 export const Login=()=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   let obj = withContainerPayload;
@@ -13,5 +14,7 @@ export const Login=()=>{
     const Section = withContainer(
         SectionDetails,obj
       );
-    return <Section ></Section>
+    return <React.Fragment>
+      {/* <Spinner></Spinner> */}
+      <Section ></Section></React.Fragment> 
 }

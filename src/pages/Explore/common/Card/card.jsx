@@ -18,7 +18,7 @@ export const Card=({payload,cardType,opacity,onMouseEnter})=>{
         "height","",require(`../../../../assets/images/${pload.imageUrl}`),"250px"
       );
       let RoundedImage = withSettings(
-        "rounded","",require(`../../../../assets/images/${pload.imageUrl}`),"120px"
+        "rounded","",require(`../../../../assets/images/${pload.imageUrl}`),"120px","none"
       );
       let AThirdImage = withSettings(
         "height","",require(`../../../../assets/images/${pload.imageUrl}`),"229px"
