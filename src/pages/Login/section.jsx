@@ -16,7 +16,7 @@ export const SectionDetails=()=>{
     return <React.Fragment >
         <div style={{position:"relative"}}> 
     <Image></Image>
-    <div style={{position:"absolute",width:"40%",top:"7%",left:"28%", zIndex:5}}>
+    <div style={{position:"absolute",width:"35%",top:"7%",left:"31%", zIndex:5}}>
     <img src={popup}/>'
     <div  style={{position:"absolute",width:"80%",top:"13%",left:"10%", textAlign:"center"}}>
         <h2>Welcome Back !</h2>
@@ -27,6 +27,10 @@ export const SectionDetails=()=>{
 <label>Password</label></div>
 <input type="text"/>
 <Button text={"Sign In"} url={"explore"}></Button>
+    </div>
+    <div style={{position:"relative", paddingLeft:"5%", paddingRight:"5%"}}>
+      <p style={{float:"left"}}>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u>Sign Up</u></span></p>
+      <p style={{float:"right"}}>Forgot Password?</p>
     </div>
     </div>
 </div>
