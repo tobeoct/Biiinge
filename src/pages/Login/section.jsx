@@ -16,9 +16,9 @@ export const SectionDetails=()=>{
     return <React.Fragment >
         <div style={{position:"relative"}}> 
     <Image></Image>
-    <div style={{position:"absolute",width:"40%",top:"10%",left:"28%", zIndex:5}}>
+    <div style={{position:"absolute",width:"40%",top:"7%",left:"28%", zIndex:5}}>
     <img src={popup}/>'
-    <div  style={{position:"absolute",width:"80%",top:"15%",left:"10%", textAlign:"center"}}>
+    <div  style={{position:"absolute",width:"80%",top:"13%",left:"10%", textAlign:"center"}}>
         <h2>Welcome Back !</h2>
         <div style={{textAlign:"left", marginTop:"30px"}}>
 <label>Username</label></div>
