@@ -29,7 +29,7 @@ export const SectionDetails=()=>{
 <input type="text"/>
 <Button text={"Sign In"} url={"explore"}></Button>
     </div>
-    <div style={{position:"relative", paddingLeft:"5%", paddingRight:"5%"}}>
+    <div style={{position:"relative", paddingLeft:"5%", paddingRight:"5%"}} className="login-section1__actions">
       <p style={{float:"left"}}>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u>Sign Up</u></span></p>
       <p style={{float:"right"}}>Forgot Password?</p>
     </div>

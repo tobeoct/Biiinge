@@ -249,10 +249,13 @@ text-align: center;
   .biiinge-searchbar{
     &__container{
       width: 80%;
-  left:10%;
+  left:12.5%;
   }
   &__input{ 
-    width: 70%;
+    width: 80%;
+  }
+  &__type{
+    display: none !important;
   }
 }
   #biiinge-sidenav__container{
