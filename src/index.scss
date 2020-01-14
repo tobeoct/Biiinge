@@ -253,6 +253,11 @@ text-align: center;
   }
   &__input{ 
     width: 80%;
+    input{
+      padding-top:3px !important;
+      box-sizing: border-box;
+      padding-left: 7%;
+    }
   }
   &__type{
     display: none !important;

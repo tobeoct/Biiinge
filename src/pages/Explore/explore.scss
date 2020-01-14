@@ -397,6 +397,10 @@ border-radius: 2px;
             height: 100vh !important;
         }
     }}
+    .explore-filter__container{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     #explore-sections{
         &__titlebar{   
             min-height: 60px !important;
@@ -417,6 +421,9 @@ border-radius: 2px;
         &__description{
             top: 35% !important;
             left:5% !important;
+            h2{
+                font-weight: 700 !important;
+            }
             h5{
                 max-width: 400px !important;
                 letter-spacing: 0.04em;
