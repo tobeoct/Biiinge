@@ -389,6 +389,7 @@ border-radius: 2px;
 
 
 @media all and (max-width:900px){
+      
     .explore-section1{
         &__image {
         height: 100vh !important;
@@ -396,7 +397,20 @@ border-radius: 2px;
             height: 100vh !important;
         }
     }}
+    #explore-sections{
+        &__titlebar{   
+            min-height: 60px !important;
+            padding: 15px 25px 15px 7% !important;
+           height: auto !important;
+           box-sizing: border-box !important;
+           margin-bottom: 10px;
+           h1{
+               width: 100%;
+           }
+        }
+    }
     #explore-section1{
+        
         &__container{
             height: auto !important;
         }
