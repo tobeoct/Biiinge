@@ -14,17 +14,18 @@ export const SectionDetails=()=>{
   );
   
     return <React.Fragment >
-        <div style={{position:"relative"}}> 
+        <div id="login-section1__center-piece"> 
     <Image></Image>
-    <div style={{position:"absolute",width:"35%",top:"7%",left:"31%", zIndex:5}}>
-    <img src={popup}/>'
-    <div  style={{position:"absolute",width:"80%",top:"13%",left:"10%", textAlign:"center"}}>
+    <div className="login-section1__details__container">
+    <img src={popup}/>
+    <div className="login-section1__details">
         <h2>Welcome Back !</h2>
         <div style={{textAlign:"left", marginTop:"30px"}}>
 <label>Username</label></div>
 <input type="text"/>
 <div style={{textAlign:"left"}}>
-<label>Password</label></div>
+<label>Password</label>
+</div>
 <input type="text"/>
 <Button text={"Sign In"} url={"explore"}></Button>
     </div>

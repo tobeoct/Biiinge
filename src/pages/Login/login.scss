@@ -1,13 +1,11 @@
 @import '../../css/globals';
-#login-section1__container{
-    height: 100vh !important;
+#login-section1{
+    &__center-piece{
+        position: relative;
+        height: 100vh !important;
+    }
+    &__container{
     overflow: hidden;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // justify-items: center;
-    // align-content: center;
-    // padding-top: 30%;
     h2{
         font-weight: 400 !important;
         font-size: 2.3em !important;
@@ -32,7 +30,74 @@ color: $light-grey-color;
         }
       }
       button{
-          margin-top: 5%;
+          margin-top: 2.5%;
+    margin-left: 5%;
       }
+      .login-section1{
+        &__background{
+            height: 100vh ; 
+            img{
+                height: 100vh;
+            }
+        }
+        &__details{
+        position:absolute;
+        width:80%;
+        top:13%;
+        left:10%; 
+        text-align:center;
+        &__container{
+           position:absolute;
+           width:40%;
+           top:15%;
+           left:29%; 
+           z-index:5;
+           img{
+
+           min-height: 70vh;
+        }
+        }
+    }
+}
+}
 }
 
+@media all and (max-width:600px){
+    #biiinge-popupbar{
+        display: none;
+    }
+    #login-section1__container{
+        overflow-y: auto;
+    .login-section1__background{
+        height: 100vh !important;
+        img{
+            height: 100vh;
+        }
+    }
+    .login-section1{
+        &__details{
+            
+        &__container{
+                width:90% !important;
+                min-height: 80vh;
+left:5% !important;
+top:15% !important;
+img{
+    width:100% !important;
+    min-height: 70vh;
+}
+input{
+    height: 40px !important;
+}
+label:first-child{
+    margin-top: 10px;
+}
+button{
+    margin-top: 3% !important;
+    padding: 15px 20px !important;
+}
+        }
+    }
+}
+    }
+}

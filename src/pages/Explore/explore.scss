@@ -129,6 +129,10 @@
 .biiinge-card__rounded {
  height: 130px;
  margin-left:40px;
+ &:hover img{
+     
+    border:2px solid $light-grey-color !important;
+ }
  &__active img{
      border:2px solid $accent-color !important;
     //  filter: blur(2px);
@@ -385,9 +389,28 @@ border-radius: 2px;
 
 
 @media all and (max-width:900px){
+    .explore-section1{
+        &__image {
+        height: 100vh !important;
+        img{
+            height: 100vh !important;
+        }
+    }}
     #explore-section1{
         &__container{
             height: auto !important;
         }
+        &__description{
+            top: 35% !important;
+            left:5% !important;
+            h5{
+                max-width: 400px !important;
+                letter-spacing: 0.04em;
+                font-weight: 100 !important;
+                opacity: 0.8;
+            }
+        }
+        
+    
     }
   }

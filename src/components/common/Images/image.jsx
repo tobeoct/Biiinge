@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Overlay } from '../Overlay';
 export const Image=({type,picture,height,overlayType})=>
 {
-    const [style,setStyle] =useState({
-        width:"100%",
-        height:"100%",
-        objectFit:"cover"
-    });
+    const [style,setStyle] =useState();
     const [myHeight,setMyHeight] =useState(height);
     useEffect(()=>{
 
@@ -14,22 +10,19 @@ export const Image=({type,picture,height,overlayType})=>
         if(type==="xs"){
         setStyle({
             width:"60px",
-            height:"100vh",
-            objectFit:"cover"
+            height:"100vh"
         });
         }
-        if(type==="no-height" ){
-            setStyle({
-                width:"100%",
-                objectFit:"cover"
-            });
-            }
+        // if(type==="no-height" ){
+        //     setStyle({
+        //         width:"100%",
+        //         objectFit:"cover"
+        //     });
+        //     }
 
             if( type==="height"){
                 setStyle({
-                    width:"100%",
-                    height:myHeight,
-                    objectFit:"cover"
+                    height:myHeight
                 });
             }
 

@@ -10,7 +10,7 @@ export const Login=()=>{
   obj.id="login-section1__container";
   obj.className="";
   obj.isSection= true;
-  obj.height="50vh";
+  obj.height="100vh";
     const Section = withContainer(
         SectionDetails,obj
       );
