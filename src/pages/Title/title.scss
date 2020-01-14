@@ -123,3 +123,23 @@ border-radius: 2px;
 
 }
 }
+@media all and (max-width:900px){
+    .col-xs-4{
+        width: 30% !important;
+        .explore-sections__height{
+
+            max-height: 200px !important;
+            img{
+                
+            max-height: 200px !important;
+            }
+        }
+        button{
+            font-size: 0.85em !important;
+            padding:  10px !important;
+        }
+    }
+    .col-xs-8{
+        width: 70% !important;
+    }
+}

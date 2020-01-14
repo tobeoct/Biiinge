@@ -41,7 +41,7 @@ export const SectionDetails=()=>{
     
     <div className="container" style={{paddingTop:"5%"}}>
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4 col-xs-4">
           <Image></Image>
           <Button text="Add To Queue" cName="title-section2__button title-section2__button__stroke"></Button>
           
@@ -55,7 +55,7 @@ export const SectionDetails=()=>{
           </div>
           
         </div>
-        <div className="col-md-9">
+        <div className="col-md-9 col-sm-8 col-xs-8">
           <TitleText></TitleText>
           <div className="d-flex title-section2__critics__container" >
 
