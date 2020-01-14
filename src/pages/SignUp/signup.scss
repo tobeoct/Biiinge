@@ -1,0 +1,115 @@
+@import '../../css/globals';
+#signup-section1{
+    &__center-piece{
+        position: relative;
+        height: 100vh !important;
+      
+    }
+    &__container{
+    overflow: hidden;
+
+    h2{
+        font-weight: 400 !important;
+        font-size: 2.3em !important;
+    }
+    label{
+font-weight: 400;
+color: $light-grey-color;
+    }
+    input{
+        height: 40px;
+        background: #F2F2F220;
+        border: none;
+        width: 100%;
+        margin: auto;
+        padding-left: 10%;
+        &:focus{
+            background: inherit !important;
+        }
+        &::placeholder{
+          color:$white ;
+          opacity: 0.5;
+          font-size: 0.8em;
+          transform: translateY(-2px);
+        }
+      }
+      button{
+          margin: auto;
+      }
+      .signup-section1{
+        &__background{
+            height: 100vh ; 
+            img{
+                height: 100vh;
+            }
+        }
+        &__details{
+        width:80%;
+        margin: auto;
+        text-align:center;
+        &__container{
+           z-index:5;
+        position: absolute;
+        width: 40%;
+        left: 30%;
+        top: 20%;
+              /* Black */
+        
+        background: #111111;
+        /* Highlight Glow - Max */
+        
+        box-shadow: inset 0px 0px 30px rgba(167, 210, 241, 0.5), inset 0px 0px 1px #A7D2F1, inset 1px -1px 1px #A7D2F1, inset -1px 1px 1px #A7D2F1;
+        border-radius: 10px;
+        height: auto;
+           img{
+
+           min-height: 70vh;
+        }
+        }
+    }
+}
+}
+}
+
+@media all and (max-width:600px){
+    #biiinge-popupbar{
+        display: none;
+    }
+    #signup-section1__container{
+        overflow-y: auto;
+    .signup-section1__background{
+        height: 100vh !important;
+        img{
+            height: 100vh;
+        }
+    }
+    .signup-section1{
+        &__details{
+            
+        &__container{
+                width:95% !important;
+                min-height: 80vh;
+left:2.5% !important;
+top:15% !important;
+img{
+    width:100% !important;
+    min-height: 70vh;
+}
+input{
+    height: 40px !important;
+}
+label:first-child{
+    margin-top: 10px;
+}
+button{
+    margin-top: 3% !important;
+    padding: 15px 20px !important;
+}
+.signup-section1__actions p{
+    font-size: 0.8em !important;
+}
+        }
+    }
+}
+    }
+}

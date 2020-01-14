@@ -6,6 +6,7 @@ import bg from '../../assets/images/login-bg.jpg';
 import popup from '../../assets/images/popup.png';
 import {Button} from '../../components/common/Buttons';
 import './login.scss';
+import { Link } from 'react-router-dom';
 export const SectionDetails=()=>{
 
 
@@ -30,7 +31,7 @@ export const SectionDetails=()=>{
 <Button text={"Sign In"} url={"explore"}></Button>
     </div>
     <div style={{position:"relative", paddingLeft:"5%", paddingRight:"5%"}} className="login-section1__actions">
-      <p style={{float:"left"}}>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u>Sign Up</u></span></p>
+      <p style={{float:"left"}}>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u><Link to={'/signup'} >Sign Up</Link></u></span></p>
       <p style={{float:"right"}}>Forgot Password?</p>
     </div>
     </div>

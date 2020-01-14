@@ -10,6 +10,7 @@ import {WITHCONTAINERPAYLOAD} from './variables/payloads';
 import { Video } from './pages/Title';
 import { SearchBar } from './components/common/SearchBar';
 import { Login } from './pages/Login';
+import { SignUp } from './pages/SignUp';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -51,6 +52,7 @@ import { Login } from './pages/Login';
       <SearchBar></SearchBar>
       <Switch>
       <Route exact path='/' component={Login} />
+      <Route exact path='/signup' component={SignUp} />
       <Route exact path='/explore' component={Explore} />
       <Route exact path='/title' component={Video} />
       </Switch>
