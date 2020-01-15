@@ -13,7 +13,7 @@ export const SectionDetails=()=>{
     return <React.Fragment >
       <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" offset={0} isVisible={true}>
   
-    <Trailer className={"title-section1"} ></Trailer >
+    <Trailer className={"title-section1"} type={"lotr"} ></Trailer >
     {/* <VideoPlayer src={video}/> */}
     <div className="scrolling-wrapper" style={{opacity:0.4}}>
       {data.payload.map(item=>{

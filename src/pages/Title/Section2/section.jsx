@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react';
 import {Animated} from "react-animated-css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import {withSettings} from '../../../components/common/Images';
-import marvel from '../../../assets/images/marvel.png';
+import marvel from '../../../assets/images/lotr.jpg';
 import '../title.scss';
 //  import data from "../../../datasource/movies.json";
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
@@ -30,7 +30,7 @@ export const SectionDetails=()=>{
   const Image = withSettings(
     "height","title-section2__teaser",marvel,"300px"
   );
-  const TitleText = withFormatting("Lord of The Rings \nThe Fellowship of the Rings","large-title","title_section2__title")
+  const TitleText = withFormatting("Lord Of The Rings \nThe Fellowship of the Rings","large-title","title_section2__title")
   // const CardsSection = withContainer(
   //   Cards,obj
   // );
