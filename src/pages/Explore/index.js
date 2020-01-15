@@ -11,7 +11,6 @@ import {withContainer} from '../../components/common/Containers';
 import { Section8 } from "./Section8";
 import { SideNav } from "../../components/Navigation/SideNav";
 import { WITHCONTAINERPAYLOAD } from "../../variables/payloads";
-import { Spinner } from "../../components/common/Spinner";
 
 export const Explore=()=>{
     let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -27,7 +26,6 @@ export const Explore=()=>{
       );
     
     return<React.Fragment>
-        {/* <Spinner></Spinner> */}
       <SideBar></SideBar>
     
          <Section1></Section1> 

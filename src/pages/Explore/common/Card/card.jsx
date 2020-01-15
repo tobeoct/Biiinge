@@ -189,18 +189,18 @@ export const Card=({payload,cardType,opacity,onMouseEnter})=>{
 </div>
     }
     else if(cardType==="sheared-left"){
-      return  <div className="biiinge-sheared-card"><img src={require(`../../../../assets/images/${pload.imageUrl}`)} className="biiinge-sheared-card__image-left"/></div>
+      return  <div className="biiinge-sheared-card"><img src={require(`../../../../assets/images/${pload.imageUrl}`)} alt="Loading..." className="biiinge-sheared-card__image-left"/></div>
     }
     else if(cardType==="sheared-right")
     {
      return <div className="biiinge-sheared-card" style={{position:"relative"}}>
-       <img src={require(`../../../../assets/images/${pload.imageUrl}`)} className="biiinge-sheared-card__image-right"/>
+       <img src={require(`../../../../assets/images/${pload.imageUrl}`)}  alt="Loading..." className="biiinge-sheared-card__image-right"/>
   
        </div>
     }
     else if(cardType==="sheared-active"){
       return <div className="biiinge-sheared-card" >
-        <img src={require(`../../../../assets/images/${pload.imageUrl}`)} className="biiinge-sheared-card-active"/>
+        <img src={require(`../../../../assets/images/${pload.imageUrl}`)}  alt="Loading..." className="biiinge-sheared-card-active"/>
         <div className="" style={{position:"absolute", top:"5%",right:"20px", paddingLeft:"5px",paddingRight:"5px", zIndex:"4"}}>
           <div style={{position:"relative"}}>
             <div style={{position:"absolute",width:"38px",height:"4px",borderRadius:"5px", zIndex:"2",background:"#409DE0"}}></div>

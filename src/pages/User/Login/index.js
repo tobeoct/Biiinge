@@ -4,8 +4,8 @@ import { SectionDetails } from './section';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
 // import { Spinner } from '../../../../components/common/Spinner';
 export const Login=()=>{
-  let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
-  let obj = withContainerPayload;
+  // let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
+  let obj = WITHCONTAINERPAYLOAD;
   obj.type="";
   obj.id="user-section1__container";
   obj.className="login-section1__container";

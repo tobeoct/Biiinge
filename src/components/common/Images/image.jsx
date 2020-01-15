@@ -40,7 +40,7 @@ export const Image=({type,picture,height,overlayType})=>
     
     },[type,height]);
     // if(type!=="no-height"){
-    return <React.Fragment><Overlay type={overlayType}></Overlay><img style={style} src={picture} /></React.Fragment> 
+    return <React.Fragment><Overlay type={overlayType}></Overlay><img style={style} src={picture} alt="Loading..."/></React.Fragment> 
     // }
     // else{
     //     return <React.Fragment><img style={style} src={picture} /></React.Fragment> 

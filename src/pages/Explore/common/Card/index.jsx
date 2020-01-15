@@ -16,10 +16,10 @@ const handleSetDisplay=()=>{
 }
 if(payload!==undefined){
     if(cardType==="sheared"){
-        return <React.Fragment><Card key={count++} payload={payload[0]} cardType={"sheared-left"} opacity={1} onMouseEnter={handleSetDisplay}></Card>
+        return <ScrollAnimation animateIn="fadeIn" isVisible={true} offset={80}><React.Fragment><Card key={count++} payload={payload[0]} cardType={"sheared-left"} opacity={1} onMouseEnter={handleSetDisplay}></Card>
          <Card key={count++} payload={payload[1]} cardType={"sheared-active"} opacity={1} onMouseEnter={handleSetDisplay}></Card>
          <Card key={count++} payload={payload[2]} cardType={"sheared-right"} opacity={1} onMouseEnter={handleSetDisplay}></Card>
-         </React.Fragment>
+         </React.Fragment></ScrollAnimation>
     }else{
     return <React.Fragment>
         <ScrollAnimation animateIn="fadeIn" isVisible={true} offset={80}>

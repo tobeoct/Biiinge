@@ -5,7 +5,7 @@ import './popup-bar.scss';
 export const PopupBar =()=>{
     return <div id="biiinge-popupbar" >
         
-        <img src={background}/>
+        <img src={background} alt="Popup"/>
         <div style={{position:"absolute", textAlign:"center",top:"15%"}}>
             <div style={{width:"113.3px", margin:"auto"}}>
             <img src={vrHeadSet}/>
