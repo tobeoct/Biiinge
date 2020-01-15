@@ -281,6 +281,24 @@
 @media all and (max-width:900px){
     #explore-section2__container{
         padding-top:0 !important;
+        padding-bottom: 20px !important;
+    }
+    #explore-section2__trending__container{
+        padding-bottom: 10px !important;
+        .biiinge-card{
+            width:200px !important;
+            &__actions{
+                // bottom: 36px !important;
+            }
+            &__image{
+            width:200px !important;
+            height: 250px !important;
+            padding-bottom: 0 !important;
+        img{
+            height: 100% !important;
+        }
+        }
+        }
     }
       .explore-section2__teaser,.explore-section3__teaser,.explore-section5__teaser{
          

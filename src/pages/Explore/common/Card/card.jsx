@@ -234,7 +234,7 @@ export const Card=({payload,cardType,opacity,onMouseEnter})=>{
             <p style={{color:"#409DE0", fontSize:"9px", transform:"translateY(5px)"}}>100%</p>
           </div>
           </div>
-        <div className="" style={{position:"absolute",width:"100%", bottom:"10px", paddingLeft:"5px",paddingRight:"5px", zIndex:"4"}}>
+        <div className="biiinge-card__actions" style={{position:"absolute",width:"100%", bottom:"10px", paddingLeft:"5px",paddingRight:"5px", zIndex:"4"}}>
           <div style={{display:"inline-block",width:"50%"}}>
             <button style={{background:"transparent",padding:"3px",borderRadius:"2px",fontSize:"10px", border:"1px solid #c4c4c4",color:"white"}}>PG-13</button>
           </div>
