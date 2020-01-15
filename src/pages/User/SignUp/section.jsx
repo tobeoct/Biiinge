@@ -1,13 +1,12 @@
 import React, { useEffect, useContext, useState } from 'react';
 import {withSettings} from '../../../components/common/Images';
 import bg from '../../../assets/images/login-bg.jpg';
-import popup from '../../../assets/images/popup.png';
 import {Button} from '../../../components/common/Buttons';
 import '../user.scss';
 import { Link } from 'react-router-dom';
 export const SectionDetails=()=>{
   const Image = withSettings(
-    "no-height","signup-section1__background",bg,undefined,"login"
+    "no-height","user-section1__background",bg,undefined,"login"
   );
   
     return <React.Fragment >

@@ -59,6 +59,13 @@
 }
 
 .user-section1{
+    &__background{
+        height: 100vh;
+        padding: 0 !important;
+        img{
+            height: 100%;
+        }
+    }
     &__input{
         text-align: left;
         margin-top:20px;
@@ -120,12 +127,8 @@
     top: 20%;
           /* Black */
     
-    background: #111111;
-    /* Highlight Glow - Max */
-    
-    box-shadow: inset 0px 0px 30px rgba(167, 210, 241, 0.5), inset 0px 0px 1px #A7D2F1, inset 1px -1px 1px #A7D2F1, inset -1px 1px 1px #A7D2F1;
-    border-radius: 10px;
-    height: auto;
+    background: $primary-color;
+   @include highlight-glow-max
 }
 
 }
@@ -134,41 +137,5 @@
     #biiinge-popupbar{
         display: none;
     }
-    #signup-section1__container{
-        overflow-y: auto;
-    .signup-section1__background{
-        height: 100vh !important;
-        img{
-            height: 100vh;
-        }
-    }
-    .signup-section1{
-        &__details{
-            
-        &__container{
-                width:95% !important;
-                min-height: 80vh;
-left:2.5% !important;
-top:15% !important;
-img{
-    width:100% !important;
-    min-height: 70vh;
-}
-input{
-    height: 40px !important;
-}
-label:first-child{
-    margin-top: 10px;
-}
-button{
-    margin-top: 3% !important;
-    padding: 15px 20px !important;
-}
-.signup-section1__actions p{
-    font-size: 0.8em !important;
-}
-        }
-    }
-}
-    }
+  
 }

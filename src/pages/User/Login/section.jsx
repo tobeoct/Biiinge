@@ -11,7 +11,7 @@ export const SectionDetails=()=>{
 
 
   const Image = withSettings(
-    "no-height","login-section1__background",bg,undefined,"login"
+    "no-height","user-section1__background",bg,undefined,"login"
   );
   
     return <React.Fragment >
