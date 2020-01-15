@@ -12,6 +12,7 @@ import ThemeContext from '../../../contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
 import { Trailer } from '../../../components/common/Trailers';
 import { Filters } from '../common/Filters';
+import {Teaser} from '../../../components/common/Images/teaser';
 export const SectionDetails=({type=""})=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   
@@ -30,9 +31,6 @@ export const SectionDetails=({type=""})=>{
   obj.id="";
   obj.isSection= false;
   obj.height=undefined;
-  const Image = withSettings(
-    "no-height","explore-section5__teaser",eyeCatcher
-  );
   const CardsSection = withContainer(
     Cards,obj
   );
@@ -46,7 +44,7 @@ export const SectionDetails=({type=""})=>{
   );
     return <React.Fragment >
        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
-    <Image></Image>
+     <Teaser className={"explore-section5__teaser"} image={eyeCatcher}></Teaser>
     </ScrollAnimation>
     <Header text={"Movies"}></Header>
     <Filters></Filters>

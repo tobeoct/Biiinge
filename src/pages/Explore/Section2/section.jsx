@@ -7,6 +7,7 @@ import eyeCatcher from '../../../assets/images/eye-catcher-are.svg';
 import '../explore.scss';
 import { Header } from '../common/Headers/header';
 import { Cards } from '../common/Card';
+import {Teaser} from '../../../components/common/Images/teaser';
  import data from "../../../datasource/movies.json";
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
 import { Filters } from '../common/Filters';
@@ -28,9 +29,7 @@ export const SectionDetails=()=>{
     //   // Do something for an error here
     // });
   })
-  const Image = withSettings(
-    "no-height","explore-section2__teaser",eyeCatcher
-  );
+
   const CardsSection = withContainer(
     Cards,obj
   );
@@ -38,7 +37,7 @@ export const SectionDetails=()=>{
     
      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
   
-    <Image></Image>
+  <Teaser className={"explore-section2__teaser"} image={eyeCatcher}></Teaser>
 </ScrollAnimation>
     <Header text={"Trending"}></Header>
 <Filters></Filters>

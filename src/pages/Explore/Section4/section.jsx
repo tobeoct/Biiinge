@@ -11,6 +11,7 @@ import { Cards } from '../common/Card';
 import ThemeContext from '../../../contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
 import { Pagination } from '../../../components/common/Pagination';
+import {Teaser} from '../../../components/common/Images/teaser';
 export const SectionDetails=({type=""})=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   
@@ -37,16 +38,13 @@ export const SectionDetails=({type=""})=>{
   obj.className="scrolling-wrapper";
   obj.isSection= false;
   obj.height=undefined;
-  const Image = withSettings(
-    "no-height","explore-section4__teaser",eyeCatcher,undefined,"none"
-  );
   const CardsSection = withContainer(
     Cards,obj
   );
     return <React.Fragment >
  <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" isVisible={true}>
   
-     <Image></Image>
+ <Teaser className={"explore-section4__teaser"} image={eyeCatcher}></Teaser>
      </ScrollAnimation>
     <Header text={"Just Aired Episodes"}></Header>
    <CardsSection payload={data.payload} type={""} cardType={"sheared"} opacity={myOpacity}></CardsSection>
