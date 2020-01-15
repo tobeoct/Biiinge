@@ -7,8 +7,8 @@ export const Login=()=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   let obj = withContainerPayload;
   obj.type="";
-  obj.id="login-section1__container";
-  obj.className="";
+  obj.id="user-section1__container";
+  obj.className="login-section1__container";
   obj.isSection= true;
   obj.height="100vh";
     const Section = withContainer(

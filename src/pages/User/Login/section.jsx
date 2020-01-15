@@ -31,12 +31,12 @@ export const SectionDetails=()=>{
 <input type="text"/>
 </div>
 <div style={{margin:"20px auto"}}>
-<Button text={"Sign Up"} url={"explore"}></Button></div>
+<Button text={"Sign In"} url={"explore"}></Button></div>
     </div>
     <div className="user-section1__actions">
       <div style={{position:"relative", width:"100%"}}>
-      <p style={{float:"left"}}>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u><Link to={'/signup'} >Sign Up</Link></u></span></p>
-      <p style={{float:"right"}}><u>Forgot Password?</u></p>
+      <p>Create an Account.<span className="color-accent" style={{marginLeft:"5px"}}><u><Link to={'/signup'} >Sign Up</Link></u></span></p>
+      <p><u>Forgot Password?</u></p>
       </div>
     </div>
     </div>

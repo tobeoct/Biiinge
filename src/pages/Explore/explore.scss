@@ -389,7 +389,16 @@ border-radius: 2px;
 
 
 @media all and (max-width:900px){
-      
+    #explore-section2__container{
+        padding-top:0 !important;
+    }
+      .explore-section2__teaser,.explore-section3__teaser,.explore-section5__teaser{
+         
+          img{
+            //   height: 100%;
+              object-fit: cover;
+          }
+      }
     .explore-section1{
         &__image {
         height: 100vh !important;
@@ -433,5 +442,23 @@ border-radius: 2px;
         }
         
     
+    }
+    .explore-section6__schedules__card {
+        width: 75% !important;
+        height: 400px !important;
+    }
+      .explore-section5__movies,.explore-section8__kidstv__container,.explore-section6__schedules__container,.explore-section7__tvshows__container {
+        padding: 2.5% !important;
+        padding-right: 1% !important;
+      }
+      #explore-section3__friends__container{
+        padding-top: 0px !important;
+        // padding-bottom: 1px !important;
+      }
+      .explore-section7__tvshows__card {
+        width: 48%;
+        height: auto;
+        &:not(:nth-child(2n)){
+        margin-right: 2%;}
     }
   }

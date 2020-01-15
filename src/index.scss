@@ -246,10 +246,29 @@ text-align: center;
   }
 }
 @media all and (max-width:900px){
+
+  .biiinge-card-wide{
+   width: 250px !important;
+   height: 170px !important;
+  }
+  .biiinge-sheared-card{
+    position: relative;
+    height: 200px !important;
+    margin: 5% auto;
+    margin-left: 2%;
+    perspective: 300px;
+  }
+  .biiinge-button__rounded,.biiinge-card__rounded{
+   transform: scale(0.8);
+   margin-right: 0px !important;
+   margin-left: 5px !important;
+  }
+  
   .biiinge-searchbar{
     &__container{
       width: 80%;
-  left:12.5%;
+  left:14%;
+  
   }
   &__input{ 
     width: 80%;

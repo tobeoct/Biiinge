@@ -6,7 +6,7 @@ export const SignUp=()=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   let obj = withContainerPayload;
   obj.type="";
-  obj.id="signup-section1__container";
+  obj.id="user-section1__container";
   obj.className="";
   obj.isSection= true;
   obj.height="50vh";

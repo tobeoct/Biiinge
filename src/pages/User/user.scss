@@ -1,12 +1,5 @@
 @import '../../css/globals';
-#login-section1{
-   
-    &__container{
-    overflow: hidden;
-    
-    }
 
-}
 
 // @media all and (max-width:600px){
 //     #biiinge-popupbar{
@@ -51,7 +44,7 @@
 //     }
 // }
 
-#signup-section1{
+#user-section1{
   
     &__container{
     overflow: hidden;
@@ -62,6 +55,7 @@
     &__background{
         height: 100vh;
         padding: 0 !important;
+        position: fixed;
         img{
             height: 100%;
         }
@@ -77,6 +71,12 @@
         position: absolute;
         bottom: -30px;
         width: 100%;
+        p:first-child{
+            float: left;
+        }
+        p:last-child{
+            float: right;
+        }
     }
     &__center-piece{
         position: relative;
@@ -109,6 +109,7 @@
           }
           button{
               margin: auto;
+              transform: translateX(10%);
           }
     }
     &__popup{
@@ -137,5 +138,52 @@
     #biiinge-popupbar{
         display: none;
     }
+    #user-section1{
   
+        &__container{
+        overflow-y: auto;
+    }
+    }
+   
+  .user-section1{
+    &__center-piece{
+       height: 170vh !important;
+       h2{
+        font-size: 1.4em !important;
+    }
+    }
+  &__actions{
+      bottom:-40px;
+      p{
+          float: none !important;
+          text-align: center;
+          margin-top:10px;
+      }
+  }
+      &__popup{
+        &__container{
+            width: 90%;
+            left: 5%;
+            top:12%;
+           
+        }
+      }
+  }
+  .login-section1__container{
+    overflow: hidden;
+   
+    .user-section1{
+        &__actions{
+            bottom:-70px;
+        }
+        &__center-piece{
+            height: 100vh !important;
+          
+        }
+        &__popup{
+            &__container{
+                top:20%;
+            }}
+    }
+}
 }
