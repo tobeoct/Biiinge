@@ -21,7 +21,7 @@ export const  ThumbnailDescription=()=>{
 </Animated>
 <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
 
-<div className="d-flex"  id="explore-section1__thumbnail-actions"><Button text={"Watch Now"}></Button><Button text={"Add To List"} type={"accent"}></Button></div>
+<div className="d-flex"  id="explore-section1__thumbnail-actions"><Button text={"Watch Now"} url={"title"}></Button><Button text={"Add To List"} type={"accent"} url={"title"}></Button></div>
 </Animated>
 <Animated animationIn="fadeInUp" animationOut="fadeInDown" isVisible={true}>
 <div className=" d-flex" style={{margin:"20px auto"}}>

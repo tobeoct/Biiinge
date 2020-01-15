@@ -21,7 +21,7 @@ export const SectionDetails=()=>{
     <h3><i>Bringing the theatre experience to your finger tips</i></h3>
     <p>Stream, share and enjoy unlimited access 
 to thousands of MOVIES</p>
-<Button text={"Watch Now"} url={"explore"}></Button>
+<Button text={"Watch Now"} url={"login"}></Button>
     </div>
     </div>
     </ScrollAnimation>

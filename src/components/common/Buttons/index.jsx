@@ -19,5 +19,5 @@ export const Button=({type,text,cName,url})=>{
         className+=" biiinge-button__small";
         linkClassName="color-black";
     }
-    return <Link className={linkClassName} to={url!==undefined?'/explore':'/title'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
+    return <Link className={linkClassName} to={url!==undefined?`/${url}`:'/'} ><button className={className} style={{marginRight:"30px"}}>{text}</button></Link>
 }
