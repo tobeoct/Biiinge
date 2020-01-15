@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {withSettings} from '../../../../components/common/Images';
 import {withFormatting} from '../../../../components/common/Text';
-import marvel from '../../../../assets/images/marvel.png';
 import { SVG } from '../../../../components/common/Images/svg';
 import star from '../../../../assets/icons/star.svg';
 import friends from '../../../../assets/icons/friends.svg';
@@ -149,18 +148,13 @@ export const Card=({payload,cardType,opacity,onMouseEnter})=>{
     else if(cardType==="rounded"){
         return <div className={pload.isActive?"biiinge-card biiinge-card__rounded biiinge-card__rounded__active ":"biiinge-card biiinge-card__rounded"} style={{marginRight:"30px"}} onMouseEnter={()=>handleMouseEnter(pload.id)}>
             <RoundedImage></RoundedImage>
-            {/* <img src={require(`../../../../assets/images/${pload.imageUrl}`)} style={{borderRadius:"120px", width:"120px",objectFit:"cover", height:"120px", position:"relative", zIndex:"2", border:"2px solid #888888"}} /> */}
             <div className="image__active" style={{opacity:pload.isActive?1:0}}></div>
        
 </div>
     }
     else if(cardType==="wide"){
       return  <div className="biiinge-card biiinge-card-wide" style={{marginRight:"30px"}} onMouseEnter={()=>handleMouseEnter(pload.id)}>
-            {/* <div id="image" style={{background:}}>
-
-            </div> */}
-            {/* <img src={require(`../../../../assets/images/${pload.imageUrl}`)} style={{ width:"100%",objectFit:"cover", height:"180px", position:"relative", zIndex:"2"}} /> */}
-          <div style={{position:"relative"}}>
+       <div style={{position:"relative"}}>
           <Link to={'/title'} >  <WideImage></WideImage></Link>
         <div className="" style={{position:"absolute", bottom:"5%",left:"10px", paddingLeft:"5px",paddingRight:"5px", zIndex:"4"}}>
           <div style={{position:"relative"}}>

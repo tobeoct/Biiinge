@@ -12,7 +12,6 @@ import { Cards } from '../common/Card';
  import data from "../../../datasource/tvshows.json";
 import ThemeContext from '../../../contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
-import trailer from "../../../assets/videos/mov.mp4";
 import { Trailer } from '../../../components/common/Trailers';
 import { Filters } from '../common/Filters';
 export const SectionDetails=({type=""})=>{

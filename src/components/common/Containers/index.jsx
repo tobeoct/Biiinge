@@ -1,18 +1,10 @@
 import { Screen } from "./screen"
-import React, { useState } from 'react';
+import React from 'react';
 
 export const withContainer =(WrappedComponent,payload)=>{
  let {type,id,className, isSection,height,padding} = payload;
 return class extends React.Component {
-    constructor(props) {
-      super(props);
     
-// console.log(type);
-// console.log(id);
-// console.log(className);
-// console.log(isSection);
-// console.log(height);
-    }
 
     render() {
        const { extraProp, ...passThroughProps } = this.props;

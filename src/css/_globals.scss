@@ -48,8 +48,8 @@ small{
 font-size: $font-size-sm !important;
 /* or 100% */
 letter-spacing: 0.01em;
-padding: 0;
-margin: 0;
+padding: 0 !important;
+margin: 0 !important;
 }
 .color-green{
 color:$green-color;
