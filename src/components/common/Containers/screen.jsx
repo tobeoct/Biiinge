@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 export const Screen=({children,type, id,className,isSection,height,padding})=>
 {
-
+if(className.includes("scrolling-wrapper"))
+{
+    console.log(className)
+}
     if(height===undefined)
     {
         height="100vh";
@@ -46,10 +49,13 @@ export const Screen=({children,type, id,className,isSection,height,padding})=>
     if(isSection){
     return <section style={style} id={id} className={cName}>
         {children}
+        {/* {className.includes("scrolling-wrapper")?<div className="scrolling-wrapper__swiper"><i className="fa fa-arrow-right"></i></div>:<React.Fragment></React.Fragment>} */}
     </section >
     }else{
         return <div style={style} id={id} className={cName}>
         {children}
+        {className.includes("scrolling-wrapper")?<div className="scrolling-wrapper__swiper"><span>Swipe Left >></span></div>:<React.Fragment></React.Fragment>}
+   
     </div >
     }
 }
