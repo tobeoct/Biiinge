@@ -306,12 +306,10 @@ position: relative;
 height: 350px;
 margin: 5% auto;
 margin-left: 2%;
-
-//   border: 1px solid blue;
 -webkit-perspective: 300px; /* Safari 4-8  */
 perspective: 300px;
-//   display: inline-block;
-//   vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 .biiinge-sheared-card:not(:nth-child(2)){
  
@@ -347,11 +345,11 @@ border-radius: 2px;
     position: relative;
     height: 200px !important;
     margin: 5% auto;
-    margin-left: 2%;
+    margin-left: 10px;
     perspective: none !important;
     margin-right: 10px;
     background: transparent !important;
-    width: 80% !important;
+    width: auto !important;
   }
   .biiinge-button__rounded,.biiinge-card__rounded{
    transform: scale(0.8);
@@ -387,8 +385,8 @@ border-radius: 2px;
 
   .biiinge-searchbar{
     &__container{
-      width: 80%;
-  left:14%;
+      width: 90%;
+  left:10%;
   
   }
   &__input{ 
