@@ -26,7 +26,9 @@ export const Overlay=({type})=>{
         position:"absolute",
         zIndex:1,
         background: myBG,
-        opacity:myOpacity
+        opacity:myOpacity,
+        top:0,
+        left:0
     }
     return  <div id="biiinge-image__overlay" style={style}></div>
 }

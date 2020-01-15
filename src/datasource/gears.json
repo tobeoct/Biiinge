@@ -1,0 +1,27 @@
+{
+    "payload":[{
+    "id":1,
+    "title":"Biiinge VR XO",
+    "imageUrl":"vr.png",
+"isActive": false,
+    "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
+},
+{
+    "id":2,
+    "title":"Biiinge HXR1",
+    "imageUrl":"headset.png",
+    "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences.",
+"isActive": true,
+    "watched":[{"id":1,"title":"Star Wars","status":"Watching","duration":"2hr 30mins","imageUrl":"star-wars.png"},{"id":2,"title":"Joker","status":"Watched","duration":"1hr 30mins","imageUrl":"joker.png"},{"id":3,"title":"Baby Driver","status":"Watched","duration":"1hr 30mins","imageUrl":"baby-driver.png"}]
+},
+{
+    "id":3,
+    "title":"SiiinkMaster 3000",
+    "imageUrl":"couch.png",
+    "description":"The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences."
+,"isActive": false
+
+}
+]
+
+}

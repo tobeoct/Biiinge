@@ -74,6 +74,12 @@ export const Card=({payload,cardType,opacity,onMouseEnter})=>{
       
         </div>
     }
+    else if(cardType==="card-gear"){
+      return  <div className="biiinge-card__gear">
+        <div style={{width:"100%", display:"flex", justifyContent:"center"}}><img src={require(`../../../../assets/images/${pload.imageUrl}`)} alt="Loading..."/></div>
+    <div style={{textAlign:"center", width:"100%", bottom:"10%", position:"absolute"}}><h5>{pload.title}</h5></div>
+    </div>
+    }
     else if(cardType==="card-3")
     {
       return <div className="explore-section7__tvshows__card" >

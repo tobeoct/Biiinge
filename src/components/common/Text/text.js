@@ -4,6 +4,6 @@ export const Text =({children, hasMargin})=>{
     {
     return <div style={{margin:"10px 0px"}}>{children}</div>
     }else{
-return  <div >{children}</div>
+return  <React.Fragment >{children}</React.Fragment>
     }
 }

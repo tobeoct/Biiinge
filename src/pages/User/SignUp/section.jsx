@@ -49,7 +49,7 @@ export const SectionDetails=()=>{
 <Button text={"Sign Up"} url={"explore"}></Button></div>
     </div>
     <div className="user-section1__actions">
-      <p>Already have an Account?<span className="color-accent" style={{marginLeft:"5px"}}><u><Link to={'/'} >Login</Link></u></span></p>
+      <p>Already have an Account?<span className="color-accent" style={{marginLeft:"5px"}}><u><Link to={'/login'} >Login</Link></u></span></p>
       
     </div>
     </div>
