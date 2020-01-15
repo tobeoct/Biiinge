@@ -9,8 +9,8 @@ import { ThemeProvider } from './contexts/theme-context';
 import {WITHCONTAINERPAYLOAD} from './variables/payloads';
 import { Video } from './pages/Title';
 import { SearchBar } from './components/common/SearchBar';
-import { Login } from './pages/Login';
-import { SignUp } from './pages/SignUp';
+import { Login } from './pages/User/Login';
+import { SignUp } from './pages/User/SignUp';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);

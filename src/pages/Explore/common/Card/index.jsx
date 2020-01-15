@@ -22,7 +22,7 @@ if(payload!==undefined){
          </React.Fragment>
     }else{
     return <React.Fragment>
-        <ScrollAnimation animateIn="fadeInUp" isVisible={true} offset={80}>
+        <ScrollAnimation animateIn="fadeIn" isVisible={true} offset={80}>
         {payload.map(data => {
       
     return  <Card key={count++} payload={data} cardType={type} opacity={1} onMouseEnter={handleSetDisplay} ></Card>
