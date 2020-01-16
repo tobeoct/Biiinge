@@ -4,7 +4,7 @@
 }
 #landing-section1__container
 {
-    background: url('../../assets/images/landing-bg.png');
+    background: url('../../assets/images/landing-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -263,11 +263,11 @@ font-size: 20px;
         color: $primary-color;
         }
         p{
-                max-width: 550px;
+                max-width: 600px;
                 opacity: 0.8;
                 margin: auto;
                 margin-top: 30px;
-                font-size: 1.1em;
+                font-size: 20px;
         }
     }
     &__nolimits{
