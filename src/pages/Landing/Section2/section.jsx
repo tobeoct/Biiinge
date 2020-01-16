@@ -30,7 +30,7 @@ export const SectionDetails=()=>{
   const Image = withSettings(
     "height","landing-section2__teaser",marvel,"300px"
   );
-  const TitleText = withFormatting("Joint Movie Experience","large-title","title_section2__title")
+  const TitleText = withFormatting("Joint Movie Experience","large-title","landing-section2__title")
   // const CardsSection = withContainer(
   //   Cards,obj
   // );

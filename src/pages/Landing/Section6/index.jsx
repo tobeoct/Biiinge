@@ -6,7 +6,7 @@ export const Section6=()=>{
       let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
       let obj = withContainerPayload;
       obj.type="";
-      obj.id="landing-section5__container";
+      obj.id="landing-section6__container";
       obj.className="";
       obj.isSection= true;
       obj.height=undefined;

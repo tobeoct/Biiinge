@@ -11,9 +11,9 @@ import { Cards } from '../../Explore/common/Card';
 import { Overlay } from '../../../components/common/Overlay/index.jsx';
 export const SectionDetails=()=>{
 
-  const TitleText = withFormatting("TV Shows","large-title","landing_section4__title")
-  const MovieTitleText = withFormatting("Movies","large-title","landing_section4__title")
-  const KidsTitleText = withFormatting("Kids TV","large-title","landing_section4__title")
+  const TitleText = withFormatting("TV Shows","large-title","landing-section4__title")
+  const MovieTitleText = withFormatting("Movies","large-title","landing-section4__title")
+  const KidsTitleText = withFormatting("Kids TV","large-title","landing-section4__title")
   
   return <React.Fragment >
   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={80} isVisible={true}>
@@ -32,7 +32,7 @@ export const SectionDetails=()=>{
     <div className="landing-section4__collage"></div>
   <div className="landing-section4__description">
     <TitleText></TitleText>
-    <Button text="Browse Shows"></Button>
+    <Button text="Browse Movies"></Button>
   </div>
   </div>
 </ScrollAnimation>
@@ -42,7 +42,7 @@ export const SectionDetails=()=>{
     <div className="landing-section4__collage"></div>
   <div className="landing-section4__description">
     <KidsTitleText></KidsTitleText>
-    <Button text="Browse Shows"></Button>
+    <Button text="Browse Kids"></Button>
   </div>
   </div>
 </ScrollAnimation>
