@@ -9,6 +9,9 @@
     background-attachment: fixed;
     background-position: center;
     position: relative;
+    #biiinge-image__overlay{
+        opacity: 0.7 !important;
+   }
 }
 #landing-section2__container
 {
@@ -47,7 +50,11 @@
         p{
             font-size: 20px;
             line-height: 25px;
-            color: $light-grey-color;
+            color: $dark-white-color;
+            span{
+                color: $white !important;
+                font-weight: 700 !important;
+            }
         }
         button{
             margin-top: 20px;
@@ -320,4 +327,38 @@ font-size: 20px;
             opacity: 1 !important;
        }
     }
+}
+
+@media all and (max-width:900px){
+    #landing-section1__container{
+        max-height: 90vh !important;
+        .landing-section1{
+            &__description{
+                top:35%;
+                width: 70% !important;
+                h3{
+                    font-size: 24px !important;
+                    margin-top: 20px;
+                    line-height: 30px !important;
+                    max-width: 350px !important;
+                }
+                p{
+                    max-width: 300px !important;
+                    font-size: 1.2em;
+                    line-height: 23px;
+                }
+                button{
+                    font-size: 1.2em !important;
+                    padding:15px 25px  15px 25px  !important;
+                }
+            }
+            &__title{
+    font-size:40px !important;
+            
+
+            }
+          
+        }
+
+}
 }
