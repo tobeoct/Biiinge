@@ -10,7 +10,7 @@ import { withContainer } from '../../../components/common/Containers';
 import { Cards } from '../../Explore/common/Card';
 export const SectionDetails=()=>{
 
-  const TitleText = withFormatting("Gear Up","large-title","title_section2__title")
+  const TitleText = withFormatting("Gear Up","large-title","landing-section3__title")
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   let obj = withContainerPayload;
   obj.type="no-height";
