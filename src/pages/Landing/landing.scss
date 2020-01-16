@@ -371,8 +371,9 @@ font-size: 20px;
     .landing-section2{
         &__title{
             font-size:30px !important;
-            width: 400px;
+            width: 350px;
             margin: 20px auto;
+            transform:translateX(-2%) ;
                     }
     &__description{
         width: 90%;
