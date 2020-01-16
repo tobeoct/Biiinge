@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../../assets/icons/Logo.png'
+import { Link } from 'react-router-dom';
 export const Logo =()=>{
     const style= [{
        objectFit:"contain",
@@ -9,7 +10,7 @@ export const Logo =()=>{
         width:"30px",
         margin:"10px auto"
      }];
-    return <div  style={style[1]} id="biinge-logo__container">
+    return <Link to={"/"}><div  style={style[1]} id="biinge-logo__container">
         <img src={logo} style={style[0]}/>
-    </div>
+    </div></Link>
 }

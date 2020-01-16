@@ -88,6 +88,21 @@ img{
   justify-content: flex-end;
   align-items: center ;
 }
+.pages{
+  position: relative;
+  #biinge-logo__container{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      background: $primary-color;
+      width: 60px !important;
+      height: 60px !important;
+      padding: 15px;
+      margin: 0 !important;
+      cursor: pointer;
+  }
+}
 .biiinge-button
 {
  padding: 15px 40px 15px 40px !important;
@@ -366,7 +381,9 @@ border-radius: 2px;
 }
 
 @media all and (max-width:900px){
-
+.landing-actions{
+  top:10% !important;
+}
   .biiinge-card-wide{
    width: 250px !important;
    height: 170px !important;

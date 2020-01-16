@@ -12,6 +12,7 @@ import { SearchBar } from './components/common/SearchBar';
 import { Login } from './pages/User/Login';
 import { SignUp } from './pages/User/SignUp';
 import { Landing } from './pages/Landing';
+import { Logo } from './components/common/Logo';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -49,7 +50,8 @@ import { Landing } from './pages/Landing';
     
     <Router>
       <ThemeProvider value={{show:initialState.display, setDisplay:handleSetDisplay}}>
-       
+        <div className="pages">
+       <Logo></Logo>
       <SearchBar></SearchBar>
       <Switch>
       <Route exact path='/' component={Landing} />
@@ -59,6 +61,7 @@ import { Landing } from './pages/Landing';
       <Route exact path='/title' component={Video} />
       </Switch>
       <PopupBar></PopupBar>
+      </div>
       </ThemeProvider>
     </Router>
   );

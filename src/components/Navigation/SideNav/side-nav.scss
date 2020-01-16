@@ -8,10 +8,12 @@
         z-index: 5;
         position:fixed;
     backdrop-filter: blur(24px);
+    padding-top: 5%;
     }
    &__logo
    {
     width:100%; padding-top:10px;padding-bottom:10px; background:#0D0D0D; z-index:2;
+    opacity: 0;
    }
 }
 

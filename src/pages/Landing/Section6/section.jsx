@@ -21,7 +21,7 @@ export const SectionDetails=()=>{
     <div className="landing-section6__description">
     <TitleText></TitleText>
     <p>Access free content on all of your devices, sync your queue and continue watching anywhere.</p>
-    <Button text={"Stop Wasting Time"}  url={"signup"}></Button>
+    <Button text={"Let's Biiinge"}  url={"signup"}></Button>
   </div></div>
 </ScrollAnimation>
 </React.Fragment>

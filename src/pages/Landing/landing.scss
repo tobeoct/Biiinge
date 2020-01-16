@@ -2,6 +2,20 @@
 .imposter-image{
     height: 100vh;
 }
+.landing{
+    position: relative;
+    #biinge-logo__container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background: $primary-color;
+        width: 50px !important;
+        height: 50px !important;
+        padding: 10px;
+        margin: 0 !important;
+    }
+}
 #landing-section1__container
 {
     background: url('../../assets/images/landing-bg.jpg');
