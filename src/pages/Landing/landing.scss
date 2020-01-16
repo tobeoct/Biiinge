@@ -464,13 +464,14 @@ font-size: 20px;
 }
 
 #landing-section5__container{
-    background-attachment: initial;
+    
     .landing-section5{
         &__platforms{
             width:100% !important;
             margin-top:10px !important;
         }
        &__nolimits{
+        background-attachment: initial;
            h1{
                font-size: 60px !important;
            }
