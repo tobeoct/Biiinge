@@ -13,9 +13,7 @@ import platform from '../../../assets/images/platforms.png';
 import { withSettings } from '../../../components/common/Images/index.jsx';
 export const SectionDetails=()=>{
   const TitleText = withFormatting("Get An Account Today.","large-title","landing-section6__title")
-  const Image = withSettings(
-    "height","landing-section6__platforms",platform,"auto","none"
-  );
+ 
   return <React.Fragment >
   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={80} isVisible={true}>
   <div className="landing-section6__account">
