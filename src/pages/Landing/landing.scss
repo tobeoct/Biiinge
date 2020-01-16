@@ -378,7 +378,7 @@ font-size: 20px;
     &__description{
         width: 90%;
         margin: auto;
-        margin-top: 10%;
+        margin-top: 20%;
         button{
             font-size: 1.2em !important;
             padding:15px 25px  15px 25px  !important;
@@ -464,7 +464,7 @@ font-size: 20px;
 }
 
 #landing-section5__container{
-
+    background-attachment: initial;
     .landing-section5{
         &__platforms{
             width:100% !important;

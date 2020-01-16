@@ -21,8 +21,8 @@ export const SectionDetails=()=>{
     <Overlay></Overlay>
     <div className="landing-section4__collage"></div>
   <div className="landing-section4__description">
-    <MovieTitleText></MovieTitleText>
-    <Button text="Browse Shows"></Button>
+    <TitleText></TitleText>
+    <Button text="Browse Shows" url={"explore"}></Button>
   </div>
   </div>
 </ScrollAnimation>
@@ -31,8 +31,8 @@ export const SectionDetails=()=>{
     <Overlay></Overlay>
     <div className="landing-section4__collage"></div>
   <div className="landing-section4__description">
-    <TitleText></TitleText>
-    <Button text="Browse Movies"></Button>
+    <MovieTitleText></MovieTitleText>
+    <Button text="Browse Movies"  url={"explore"}></Button>
   </div>
   </div>
 </ScrollAnimation>
@@ -42,7 +42,7 @@ export const SectionDetails=()=>{
     <div className="landing-section4__collage"></div>
   <div className="landing-section4__description">
     <KidsTitleText></KidsTitleText>
-    <Button text="Browse Kids"></Button>
+    <Button text="Browse Kids"  url={"explore"}></Button>
   </div>
   </div>
 </ScrollAnimation>
