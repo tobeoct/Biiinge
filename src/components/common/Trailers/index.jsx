@@ -16,6 +16,10 @@ export const Trailer=({className,type})=>{
   <source src={type==="lotr"?lotr:trailer} type="video/ogg"/>
   Your browser does not support HTML5 video.
 </video>
+<div className="explore-trailer__card__details">
+<div className="pull-left"><p>YOU S02 E01</p></div>
+<div className="pull-right"><p>[TRAILER]</p></div>
+</div>
      </div>
      </ScrollAnimation>
 }

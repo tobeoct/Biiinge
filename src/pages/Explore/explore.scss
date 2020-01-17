@@ -208,11 +208,22 @@
 
 }
 .explore-trailer__card{
-    height: 712px;
+    height: 70vh;
+    position: relative;
+    transform: translateY(-5%);
+    &__details{
+        position: absolute;
+        top: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     video{
         width: 100%;
         object-fit: cover;
         height: 100%;
+        &:focus{
+            outline: none;
+        }
     }
 }
 
@@ -300,6 +311,7 @@
 
 
 @media all and (max-width:900px){
+    
     .explore-sections{
 
         &__teaser{
@@ -408,5 +420,10 @@
         height: auto;
         &:not(:nth-child(2n)){
         margin-right: 2%;}
+    }
+    .explore-trailer__card{
+        height: 50vh !important;
+        transform: translateY(0%);
+        padding-right: 3% !important;
     }
   }
