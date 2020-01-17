@@ -343,14 +343,11 @@ font-size: 20px;
        }
     }
 }
-@media screen and (max-width:900px){
-    #landing-section1__container{
-        background-attachment: initial !important;
-    }
-}
+
 @media all and (max-width:900px){
     #landing-section1__container{
         max-height: 90vh !important;
+        background-attachment: initial !important;
         .landing-section1{
             &__description{
                 top:30%;
@@ -416,6 +413,9 @@ font-size: 20px;
     height: auto !important;
     .biiinge-card__gear{
         height: 400px;
+        img{
+            mix-blend-mode: normal;
+        }
     }
     .landing-section3{
         &__title{
@@ -482,7 +482,8 @@ font-size: 20px;
     .landing-section5{
         &__platforms{
             width:100% !important;
-            margin-top:10px !important;
+            margin-top:20px !important;
+            margin-bottom:  0 !important;
         }
        &__nolimits{
         background-attachment: initial;
@@ -501,10 +502,16 @@ font-size: 20px;
        padding-left: 5% !important;
        padding-right: 5% !important;
         margin:auto;
+        p{
+            font-size: 1.2em;
+            line-height: 23px;
+            margin: 10px auto !important;
+        }
         button{
             font-size: 1.2em !important;
             padding:15px 25px  15px 25px  !important;
             transform: translateX(5%);
+            margin-top: 20px !important;
         }
         
     }

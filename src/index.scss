@@ -90,7 +90,7 @@ img{
 }
 .pages{
   position: relative;
-  #biinge-logo__container{
+  #biiinge-logo__container{
       position: fixed;
       top: 0;
       left: 0;
@@ -381,8 +381,16 @@ border-radius: 2px;
 }
 
 @media all and (max-width:900px){
+  .pages{
+  #biiinge-logo__container{
+    width: 40px !important;
+    height: 40px !important;
+    padding:8px ;
+  }
+}
 .landing-actions{
   top:10% !important;
+  display: none !important;
 }
   .biiinge-card-wide{
    width: 250px !important;
