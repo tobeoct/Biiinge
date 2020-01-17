@@ -379,7 +379,47 @@ object-fit: cover;
 border-radius: 2px;
 
 }
+.biiinge-trailer__mini{
+  width: 50% !important;
+  max-width: 200px;
+  height: 140px !important;
+  background: $primary-color;
+  border-radius: 5px;
+  padding: 10px 5px;
+  position: fixed;
+  bottom: 5%;
+  left: 5px;
+  z-index: 5;
+  .explore-trailer__card{
+    height: 100% !important;
+    transform: translateY(0%);
+    padding-right: 2% !important;
+    padding-left: 2% !important;
+    padding-bottom: 0 !important;
+    &__details{
+      display: none;
+    }
+    &__actions{
+    position: absolute;
+    cursor: pointer;
+    top: -18px;
+    font-weight: 700;
+    right: -10px;
+    background: $accent-color;
+    border-radius: 100px;
+    box-sizing: border-box;
+width: 20px;
+height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+p{
+font-size: 0.6em !important;
+}
 
+    }
+}
+}
 @media all and (max-width:900px){
   .pages{
   #biiinge-logo__container{

@@ -13,6 +13,7 @@ import { Login } from './pages/User/Login';
 import { SignUp } from './pages/User/SignUp';
 import { Landing } from './pages/Landing';
 import { Logo } from './components/common/Logo';
+import { BackgroundVideo } from './components/VideoPlayer/mini';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -61,6 +62,7 @@ import { Logo } from './components/common/Logo';
       <Route exact path='/title' component={Video} />
       </Switch>
       <PopupBar></PopupBar>
+      <BackgroundVideo></BackgroundVideo>
       </div>
       </ThemeProvider>
     </Router>
