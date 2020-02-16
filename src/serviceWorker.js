@@ -9,7 +9,7 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
-
+importScripts('/cache-polyfill.js');
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -30,7 +30,33 @@ export function register(config) {
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
       return;
     }
+    self.addEventListener('install', function(e) {
+      console.log("Searching Cache");
+      e.waitUntil(
+       
+        caches.open('biiinge-cache').then(function(cache) {
+          return cache.addAll([
+            '/',
+            '/static'
+          ]);
+        })
+      );
+     });
+    window.addEventListener('fetch', function(event) {
 
+      console.log(event.request.url);
+
+      event.respondWith(
+      
+      caches.match(event.request).then(function(response) {
+      
+      return response || fetch(event.request);
+      
+      })
+      
+      );
+      
+      });
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
