@@ -3,7 +3,7 @@ const precacheResources = [
   '/',
   'index.html',
   '/css',
-  '/static/css',
+  '/static/media',
   'js/assets',
   'js/components',
   'eye-catcher-biiinge.png',
