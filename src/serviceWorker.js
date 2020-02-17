@@ -9,7 +9,19 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
-importScripts('/cache-polyfill.js');
+//importScripts('/cache-polyfill.js');
+const cacheName = 'cache-v1';
+const precacheResources = [
+  '/',
+  'index.html',
+  '/css',
+  '/static/css',
+  'js/assets',
+  'js/components',
+  'eye-catcher-biiinge.png',
+  'spinner.svg',
+  'styles/main.css'
+];
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -30,33 +42,34 @@ export function register(config) {
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
       return;
     }
-    self.addEventListener('install', function(e) {
-      console.log("Searching Cache");
-      e.waitUntil(
-       
-        caches.open('biiinge-cache').then(function(cache) {
-          return cache.addAll([
-            '/',
-            '/static'
-          ]);
-        })
+    self.addEventListener('fetch', event => {
+      console.log('Fetch intercepted for:', event.request.url);
+      event.respondWith(caches.match(event.request)
+        .then(cachedResponse => {
+            if (cachedResponse) {
+              return cachedResponse;
+            }
+            return fetch(event.request);
+          })
+        );
+    });
+    self.addEventListener('install', event => {
+      console.log('Service worker installing...');
+      self.skipWaiting();
+      // Add a call to skipWaiting here
+      event.waitUntil(
+        caches.open(cacheName)
+          .then(cache => {
+            return cache.addAll(precacheResources);
+          })
       );
-     });
-    window.addEventListener('fetch', function(event) {
-
-      console.log(event.request.url);
-
-      event.respondWith(
-      
-      caches.match(event.request).then(function(response) {
-      
-      return response || fetch(event.request);
-      
-      })
-      
-      );
-      
-      });
+    });
+    self.addEventListener('fetch', event => {
+      console.log('Fetching:', event.request.url);
+    });
+    self.addEventListener('activate', event => {
+      console.log('Service worker activating...');
+    });
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
@@ -84,6 +97,7 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      console.log('SW registered with scope:', registration.scope);
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
