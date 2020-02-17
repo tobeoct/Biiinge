@@ -3,12 +3,9 @@ const precacheResources = [
   '/',
   'index.html',
   '/css',
-  '/static/media',
-  'js/assets',
-  'js/components',
-  'eye-catcher-biiinge.png',
-  'spinner.svg',
-  'styles/main.css'
+  '/static/css',
+  '/static/js',
+  '/modules'
 ];
 self.addEventListener('fetch', event => {
     console.log('Fetch intercepted for:', event.request.url);
