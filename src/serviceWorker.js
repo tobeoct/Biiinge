@@ -31,7 +31,34 @@ const isLocalhost = Boolean(
       /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
 );
-
+self.addEventListener('fetch', event => {
+  console.log('Fetch intercepted for:', event.request.url);
+  event.respondWith(caches.match(event.request)
+    .then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return fetch(event.request);
+      })
+    );
+});
+self.addEventListener('install', event => {
+  console.log('Service worker installing...');
+  self.skipWaiting();
+  // Add a call to skipWaiting here
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => {
+        return cache.addAll(precacheResources);
+      })
+  );
+});
+self.addEventListener('fetch', event => {
+  console.log('Fetching:', event.request.url);
+});
+self.addEventListener('activate', event => {
+  console.log('Service worker activating...');
+});
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
@@ -42,34 +69,7 @@ export function register(config) {
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
       return;
     }
-    self.addEventListener('fetch', event => {
-      console.log('Fetch intercepted for:', event.request.url);
-      event.respondWith(caches.match(event.request)
-        .then(cachedResponse => {
-            if (cachedResponse) {
-              return cachedResponse;
-            }
-            return fetch(event.request);
-          })
-        );
-    });
-    self.addEventListener('install', event => {
-      console.log('Service worker installing...');
-      self.skipWaiting();
-      // Add a call to skipWaiting here
-      event.waitUntil(
-        caches.open(cacheName)
-          .then(cache => {
-            return cache.addAll(precacheResources);
-          })
-      );
-    });
-    self.addEventListener('fetch', event => {
-      console.log('Fetching:', event.request.url);
-    });
-    self.addEventListener('activate', event => {
-      console.log('Service worker activating...');
-    });
+    
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
