@@ -1,11 +1,8 @@
-const cacheName = 'cache-v1';
+const cacheName = 'biiinge-cache-v1';
 const precacheResources = [
   '/',
-  'index.html',
-  '/css',
-  '/static/css',
-  '/static/js',
-  '/modules'
+  'index.html'
+  
 ];
 self.addEventListener('fetch', event => {
     console.log('Fetch intercepted for:', event.request.url);
