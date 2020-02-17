@@ -10,18 +10,18 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 //importScripts('/cache-polyfill.js');
-const cacheName = 'cache-v1';
-const precacheResources = [
-  '/',
-  'index.html',
-  '/css',
-  '/static/css',
-  'js/assets',
-  'js/components',
-  'eye-catcher-biiinge.png',
-  'spinner.svg',
-  'styles/main.css'
-];
+// const cacheName = 'cache-v1';
+// const precacheResources = [
+//   '/',
+//   'index.html',
+//   '/css',
+//   '/static/css',
+//   'js/assets',
+//   'js/components',
+//   'eye-catcher-biiinge.png',
+//   'spinner.svg',
+//   'styles/main.css'
+// ];
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -31,34 +31,7 @@ const isLocalhost = Boolean(
       /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
 );
-self.addEventListener('fetch', event => {
-  console.log('Fetch intercepted for:', event.request.url);
-  event.respondWith(caches.match(event.request)
-    .then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-        return fetch(event.request);
-      })
-    );
-});
-self.addEventListener('install', event => {
-  console.log('Service worker installing...');
-  self.skipWaiting();
-  // Add a call to skipWaiting here
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(cache => {
-        return cache.addAll(precacheResources);
-      })
-  );
-});
-self.addEventListener('fetch', event => {
-  console.log('Fetching:', event.request.url);
-});
-self.addEventListener('activate', event => {
-  console.log('Service worker activating...');
-});
+
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
