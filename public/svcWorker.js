@@ -1,8 +1,12 @@
 const cacheName = 'biiinge-cache-v1';
 const precacheResources = [
   '/',
-  'index.html'
-  
+  'index.html',
+  '/Logo.png',
+  '/spinner.svg',
+  '/eye-catcher-biiinge.png',
+  '/static/css',
+  '/static/js'
 ];
 self.addEventListener('fetch', event => {
     console.log('Fetch intercepted for:', event.request.url);
