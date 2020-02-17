@@ -2,7 +2,8 @@ import React , {useState} from 'react';
 import {withContainer} from '../../../components/common/Containers';
 import { SectionDetails } from './section';
 import {WITHCONTAINERPAYLOAD} from '../../../variables/payloads';
-export const Section5=()=>{
+import { useEffect } from 'react';
+export const Section5=({movies})=>{
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
   let obj = withContainerPayload;
   obj.type="";
@@ -13,5 +14,8 @@ export const Section5=()=>{
     const Section = withContainer(
         SectionDetails,obj
       );
+      useEffect(()=>{
+        console.log(movies);
+      });
     return <Section type={"rounded"}></Section>
 }

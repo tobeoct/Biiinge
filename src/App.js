@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {Provider} from 'react-redux';
 import './App.css';
 import {withContainer} from './components/common/Containers';
 import { Explore } from './pages/Explore';
@@ -14,6 +15,7 @@ import { SignUp } from './pages/User/SignUp';
 import { Landing } from './pages/Landing';
 import { Logo } from './components/common/Logo';
 import { BackgroundVideo } from './components/VideoPlayer/mini';
+import { store } from './store';
  const App=() =>{
   var [initialState,setInitialState]=useState({display:false});
   let [withContainerPayload, setWithContainerPayload] = useState(WITHCONTAINERPAYLOAD);
@@ -50,6 +52,8 @@ import { BackgroundVideo } from './components/VideoPlayer/mini';
     // </div>
     
     <Router>
+
+      <Provider store={store}>
       <ThemeProvider value={{show:initialState.display, setDisplay:handleSetDisplay}}>
         <div className="pages">
        <Logo></Logo>
@@ -65,6 +69,7 @@ import { BackgroundVideo } from './components/VideoPlayer/mini';
       <BackgroundVideo></BackgroundVideo>
       </div>
       </ThemeProvider>
+      </Provider>
     </Router>
   );
 }

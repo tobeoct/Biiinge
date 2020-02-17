@@ -2,6 +2,7 @@ import { Section1 } from "./Section1";
 import { Section2 } from "./Section2";
 import { Section3 } from "./Section3";
 import { Section4 } from "./Section4";
+import Section5Container from "./Section5/container";
 import { Section5 } from "./Section5";
 import { Section6 } from "./Section6";
 import { Section7 } from "./Section7";
@@ -30,5 +31,8 @@ export const Explore=()=>{
     
          <Section1></Section1> 
     <Section2></Section2>
-     <Section3></Section3> <Section4></Section4><Section5></Section5><Section6></Section6><Section7></Section7><Section8></Section8></React.Fragment> 
+     <Section3></Section3> <Section4></Section4>
+     {/* <Section5></Section5> */}
+     <Section5Container></Section5Container>
+     <Section6></Section6><Section7></Section7><Section8></Section8></React.Fragment> 
 }

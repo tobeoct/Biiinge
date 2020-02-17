@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 export const Screen=({children,type, id,className,isSection,height,padding})=>
 {
-if(className.includes("scrolling-wrapper"))
-{
-    console.log(className)
-}
     if(height===undefined)
     {
         height="100vh";

@@ -13,7 +13,7 @@ import { Animated } from 'react-animated-css';
 export const SideNav=()=>{
     const items = [{src:playlist,text:"Playlist"},{src:movies,text:"Movies"},{src:tvShow,text:"TV Shows"},{src:watchLater,text:"Watch Later"},{src:friends,text:"Friends"},{src:favourites,
     text:"Favourites"}];
-return <Animated animationIn="fadeIn" animationInDuration="2000" animationInDelay="500" animationOut="fadeOut" isVisible={true}>
+return <Animated animationIn="fadeIn"  animationOut="fadeOut" isVisible={true}>
 <React.Fragment>
     <div id="biiinge-sidenav__logo" ><Logo></Logo></div>
    

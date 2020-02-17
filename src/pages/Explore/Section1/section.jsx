@@ -11,7 +11,7 @@ export const SectionDetails=()=>{
         "","explore-section1__image ",picture,undefined,"radial"
       );
     return <React.Fragment >
-     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDelay="500" animationInDuration="2000" isVisible={true}>
+     <Animated animationIn="fadeIn" animationOut="fadeOut"  isVisible={true}>
    <Image></Image>
     </Animated>
     <ThumbnailDescription></ThumbnailDescription>

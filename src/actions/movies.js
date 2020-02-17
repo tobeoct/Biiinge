@@ -10,8 +10,8 @@ export const VisibilityFilters = {
 /*
  * action creators
  */
-export function getMovies(startIndex=0,maxSize=10) {
-  return { type: GET_MOVIES, startIndex, maxSize }
+export function getMovies() {
+  return { type: GET_MOVIES }
 }
 export function getMovie(index) {
   return { type: GET_MOVIE,index }
